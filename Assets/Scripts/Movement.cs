@@ -51,9 +51,9 @@ public class Movement : MonoBehaviour
     }
   }
 
-  IEnumerator FollowPath(List<Waypoint> path)
+  IEnumerator FollowPath(List<Block> path)
   {
-    foreach (Waypoint waypoint in path)
+    foreach (Block waypoint in path)
     {
       transform.position = waypoint.transform.position + new Vector3(0, 2, 0);
       TurnToRoadDirection(waypoint);
@@ -61,21 +61,21 @@ public class Movement : MonoBehaviour
     }
   }
 
-  private void TurnToRoadDirection(Waypoint waypoint)
+  private void TurnToRoadDirection(Block block)
   {
-    // if (waypoint.GetOrientation() == Orientation.Right)
+    // if (block.GetOrientation() == Orientation.Right)
     // {
     //   _body.rotation = Quaternion.Euler(0,90,0);
     // }
-    // else if (waypoint.GetOrientation() == Orientation.Left)
+    // else if (block.GetOrientation() == Orientation.Left)
     // {
     //   _body.rotation = Quaternion.Euler(0,-90,0);
     // }
-    // else if (waypoint.GetOrientation() == Orientation.Down)
+    // else if (block.GetOrientation() == Orientation.Down)
     // {
     //   _body.rotation = Quaternion.Euler(0,180,0);
     // }
-    // else if (waypoint.GetOrientation() == Orientation.Up)
+    // else if (block.GetOrientation() == Orientation.Up)
     // {
     //   _body.rotation = Quaternion.Euler(0,0,0);
     // }

@@ -162,7 +162,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766081717841508711}
-  m_Text: 6,2
+  m_Text: 1,0
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -186,12 +186,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7825023031609569573}
   - component: {fileID: -4999026021569935789}
-  - component: {fileID: 1699614999}
-  - component: {fileID: 1500542117}
-  - component: {fileID: 196384171}
-  - component: {fileID: 196384172}
+  - component: {fileID: 1639250001}
+  - component: {fileID: 1639250002}
   m_Layer: 0
-  m_Name: Grass
+  m_Name: -3,3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,19 +224,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1028583, y: 2.4313097, z: 1.9052329}
   m_Center: {x: 0.065230146, y: 0.7156551, z: 0.027273014}
---- !u!114 &1699614999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4943346052668816412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8fddd556dbb44a8399b6fd928867923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1500542117
+--- !u!114 &1639250001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,21 +238,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isExplored: 0
   exploredFrom: {fileID: 0}
---- !u!114 &196384171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4943346052668816412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0390d238788042e19772f9045ea9658, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExplored: 0
-  exploredFrom: {fileID: 0}
---- !u!114 &196384172
+  candlePrefab: {fileID: 1246495616044328, guid: ea0a735aed08a9743992c3fcf9145384,
+    type: 3}
+  isPlaceable: 1
+--- !u!114 &1639250002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

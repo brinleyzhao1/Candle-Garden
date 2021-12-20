@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Waypoint : MonoBehaviour
+public class Block : MonoBehaviour
 {
   // public ok here as is a data class
   [HideInInspector]
   public bool isExplored = false;
-  [HideInInspector] public Waypoint exploredFrom;
+  [HideInInspector] public Block exploredFrom;
 
-  // public bool isPlaceable = true;
+  [SerializeField] private GameObject candlePrefab;
+
+  public bool isPlaceable = true;
 
   Vector2Int gridPos;
 
@@ -17,6 +19,22 @@ public class Waypoint : MonoBehaviour
   const string towerParentName = "Towers";
 
   // [SerializeField] private Orientation _orientation;
+
+
+  private void  OnMouseOver () {
+    if (Input.GetMouseButtonDown(1)) {
+      if (isPlaceable)
+      {
+        var newCandle = Instantiate(candlePrefab, transform.position, Quaternion.identity);
+        newCandle.transform.parent = transform;
+        newCandle.transform.position = newCandle.transform.position+ new Vector3(0, 2, 0);
+        isPlaceable = false;
+      }
+      // can
+      // Right button clicked on this object
+    }
+  }
+
 
   public int GetGridSize()
   {
