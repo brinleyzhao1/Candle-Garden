@@ -3718,7 +3718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1246495616044328, guid: ea0a735aed08a9743992c3fcf9145384, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4264549340452720, guid: ea0a735aed08a9743992c3fcf9145384, type: 3}
       propertyPath: m_RootOrder
@@ -23029,6 +23029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ceb096724d4f498e3b26709084d4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setPlayer: {fileID: 2068377843}
   setSeedsInventory: {fileID: 1504639763}
   setProduceInventory: {fileID: 783597314}
   setToolsInventory: {fileID: 2028392162}
@@ -30694,6 +30695,7 @@ GameObject:
   - component: {fileID: 2068377837}
   - component: {fileID: 2068377841}
   - component: {fileID: 2068377842}
+  - component: {fileID: 2068377843}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -30817,6 +30819,19 @@ NavMeshAgent:
   m_BaseOffset: 0.49999997
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 2
+--- !u!114 &2068377843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068377836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f0e554518a9484e80fa6fe208fa421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlantingMode: 1
 --- !u!1 &2071881028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4943346052668816412, guid: 1eae5fb4e7184466cafaac17b07d3660,

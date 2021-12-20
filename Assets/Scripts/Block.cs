@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core;
 using UnityEngine;
 
 public class Block : MonoBehaviour
@@ -22,8 +23,16 @@ public class Block : MonoBehaviour
 
 
   private void  OnMouseOver () {
-    if (Input.GetMouseButtonDown(1)) {
-      if (isPlaceable)
+    if (Input.GetMouseButtonDown(1))
+    {
+
+      float distanceFromPlayer = Vector3.Distance(GameAssets.Player.transform.position, transform.position);
+      if (distanceFromPlayer > 4)
+      {
+        return; //too far
+      }
+
+      if (isPlaceable && GameAssets.Player.PlantingMode)
       {
         var newCandle = Instantiate(candlePrefab, transform.position, Quaternion.identity);
         newCandle.transform.parent = transform;

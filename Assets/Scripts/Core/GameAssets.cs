@@ -8,7 +8,9 @@ namespace Core
 {
   public class GameAssets : MonoBehaviour
   {
-
+    [Header("Core")]
+    [SerializeField] private PlayerAction setPlayer;
+    public static PlayerAction Player;
 
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
@@ -49,6 +51,7 @@ namespace Core
 
     private void Awake()
     {
+      Player = setPlayer;
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;
