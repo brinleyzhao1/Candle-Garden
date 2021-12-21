@@ -24,6 +24,8 @@ public class Health : MonoBehaviour
 
   private IEnumerator CheckIfPlayerInDanger()
   {
+    yield return new WaitForSecondsRealtime(2); //initial buffer
+
     while (true)
     {
       if (IsPlayerSafe())

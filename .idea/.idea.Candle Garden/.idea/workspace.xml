@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/SeedUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Block.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +72,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
       </list>
     </option>
