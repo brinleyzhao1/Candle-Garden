@@ -10,9 +10,11 @@ namespace Core
     [Header("Core")] [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource setSFX;
+    [Header("Audio")] [SerializeField] private AudioSource setSFX;
     public static AudioSource SFX;
+
+    [SerializeField] private AudioClip setLoseHealthSFX;
+    public static AudioClip LoseHealthSFX;
 
     [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
@@ -66,6 +68,7 @@ namespace Core
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;
+      LoseHealthSFX = setLoseHealthSFX;
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;

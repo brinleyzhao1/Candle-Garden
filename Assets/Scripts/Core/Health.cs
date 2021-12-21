@@ -67,7 +67,10 @@ public class Health : MonoBehaviour
     while (true)
     {
       currentHealth -= damagePerSec;
+
+      GameAssets.SFX.PlayOneShot(GameAssets.LoseHealthSFX);
       UpdateUi();
+
       if (currentHealth <= 0)
       {
         Death();
@@ -86,7 +89,6 @@ public class Health : MonoBehaviour
 
   private void UpdateUi()
   {
-    print("current health: " + currentHealth);
 
     healthBar.fillAmount = (float) currentHealth / totalHealth;
   }
