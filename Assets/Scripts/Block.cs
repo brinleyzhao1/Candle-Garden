@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Core;
@@ -15,6 +16,11 @@ public class Block : MonoBehaviour
 
   // [SerializeField] private Orientation _orientation;
 
+
+  private void Start()
+  {
+    DestroyAllOtherComponents();
+  }
 
   private void  OnMouseOver () {
     if (Input.GetMouseButtonDown(1))
@@ -52,7 +58,20 @@ public class Block : MonoBehaviour
     );
   }
 
-
+  private void DestroyAllOtherComponents()
+  {
+    var allBlocks = GetComponents<Block>();
+    foreach (var block in allBlocks)
+    {
+      if (block != this)
+      {
+        Destroy(block);
+      }
+    }
+    // Component[] joints = GetComponents<HingeJoint>() as Component[];
+    // foreach(Component joint in joints)
+    //   Destroy(joint as HingeJoint);
+  }
   // public Orientation GetOrientation()
   // {
   //   return _orientation;

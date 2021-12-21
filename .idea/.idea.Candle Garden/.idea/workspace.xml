@@ -22,13 +22,12 @@
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Prefabs/Light Items/CandleStick/Candle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Prefabs/Light Items/CandleStick/Candle/SM_Prop_CandleHolder_01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Prefabs/Light Items/CandleStick/Candle/SM_Prop_CandleHolder_01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI Prefab/action slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI Prefab/action slot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/grown up candle 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/grown up candle 01.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Candle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Candle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Candle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BabyCandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Candle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BabyCandle.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" afterDir="false" />
     </list>
@@ -45,10 +44,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/SeedUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GrownUpCandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gardening/Plant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Candle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BabyCandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Block.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -67,10 +67,12 @@
         <option value="$PROJECT_DIR$/Assets/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Candle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/SeedUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Candle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GrownUpCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BabyCandle.cs" />
       </list>
     </option>
   </component>
@@ -125,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640007876917</updated>
       <workItem from="1640007894662" duration="7466000" />
-      <workItem from="1640092151472" duration="1589000" />
+      <workItem from="1640092151472" duration="3248000" />
     </task>
     <servers />
   </component>
@@ -154,9 +156,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1640024953759" />
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640093257892">
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640094874268">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640093257892" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640094874268" />
   </component>
 </project>

@@ -1,28 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core;
 using UnityEngine;
 
-public class Candle : MonoBehaviour
+public class GrownUpCandle : MonoBehaviour
 {
   public int lifeTime = 30;
-  public int growTime = 30;
+
+
 
   // Start is called before the first frame update
   void Start()
   {
     // _second += Time.deltaTime * timeScale / 2;
-    StartCoroutine(GrowUp());
-  }
-
-  private IEnumerator GrowUp()
-  {
-    float timeLeft = 0.1f;
-    while (timeLeft < growTime)
-    {
-      transform.localScale = new Vector3(9, 15 * (timeLeft / growTime), 9);
-      yield return new WaitForSeconds(0.2f);
-      timeLeft += 0.2f;
-    }
+    StartCoroutine(BurnDown());
   }
 
   private IEnumerator BurnDown()

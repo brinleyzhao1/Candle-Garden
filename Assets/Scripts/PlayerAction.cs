@@ -10,6 +10,7 @@ public class PlayerAction : MonoBehaviour
   public enum ActionMode
   {
     Planting,
+    Lighter,
     Harvest
   }
 
@@ -24,6 +25,10 @@ public class PlayerAction : MonoBehaviour
   public void ChangeToPlantingMode()
   {
     currentActionMode = ActionMode.Planting;
+  }
+  public void ChangeToLighterMode()
+  {
+    currentActionMode = ActionMode.Lighter;
   }
 
 

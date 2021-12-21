@@ -1,4 +1,3 @@
-
 using Inventory;
 using UI;
 using UnityEngine;
@@ -8,13 +7,13 @@ namespace Core
 {
   public class GameAssets : MonoBehaviour
   {
-    [Header("Core")]
-    [SerializeField] private PlayerAction setPlayer;
+    [Header("Core")] [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
 
-    [Header("Candles")]
-    [SerializeField] private GameObject setBabyCandle01;
+    [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
+    [SerializeField] private GameObject setGrownUpCandle01;
+    public static GameObject GrownUpCandle01;
 
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
@@ -26,8 +25,9 @@ namespace Core
     // [SerializeField] private GameObject setToolsTab;
     // public static GameObject toolsTab;
 
-    [Header("Inventories")]
-    [SerializeField] private Inventories.Inventory setSeedsInventory;
+    [Header("Inventories")] [SerializeField]
+    private Inventories.Inventory setSeedsInventory;
+
     public static Inventories.Inventory seedsInventory;
 
     [SerializeField] private Inventories.Inventory setProduceInventory;
@@ -39,8 +39,9 @@ namespace Core
     [SerializeField] private ActionStore setActionStore;
     public static ActionStore actionStore;
 
-    [Header("shop panel")]
-    [SerializeField] private BuySectionUi setBuySection;
+    [Header("shop panel")] [SerializeField]
+    private BuySectionUi setBuySection;
+
     public static BuySectionUi buySection;
 
     [SerializeField] private ShopItemEntryUi setShopEntryPrefab;
@@ -49,14 +50,14 @@ namespace Core
     [SerializeField] private GameObject setToolTip;
     public static GameObject ToolTip;
 
-    [Header("core")]
-    [SerializeField] private Money setMoney;
+    [Header("core")] [SerializeField] private Money setMoney;
     public static Money money;
 
     private void Awake()
     {
       Player = setPlayer;
       BabyCandle01 = setBabyCandle01;
+      GrownUpCandle01 = setGrownUpCandle01;
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;
