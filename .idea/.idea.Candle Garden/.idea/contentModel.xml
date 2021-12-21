@@ -4,7 +4,42 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="MainMenu.cs" t="Include" />
+        <e p="Fonts" t="Include">
+          <e p="Fonts - Ghost Title" t="Include">
+            <e p="bubu-ghost" t="Include">
+              <e p="Read me.txt" t="Include" />
+            </e>
+            <e p="Egorycastle" t="Include">
+              <e p="LISENCE READ THIS.txt" t="Include" />
+            </e>
+            <e p="fluffy-ghost-ding" t="Include">
+              <e p="FluffyGhostDing_LICENSE.txt" t="Include" />
+            </e>
+            <e p="ghost" t="Include">
+              <e p="DEMO - PERSONAL USE ONLY.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Normal text font" t="Include">
+            <e p="bite-the-bullet" t="Include">
+              <e p="Note From Author - Commercial Use.txt" t="Include" />
+            </e>
+            <e p="chocolate-covered-raindrops" t="Include">
+              <e p="READ ME!!.txt" t="Include" />
+            </e>
+            <e p="coal-hand-luke" t="Include">
+              <e p="JOEBOB graphics free trial font users license.txt" t="Include" />
+            </e>
+            <e p="girls-have-many-secrets" t="Include">
+              <e p="READ ME!!!!.txt" t="Include" />
+            </e>
+            <e p="going-to-do-great-things" t="Include">
+              <e p="FONT TERMS OF USE.txt" t="Include" />
+            </e>
+            <e p="moon-flower" t="Include">
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BabyCandle.cs" t="Include" />
           <e p="Block.cs" t="Include" />
@@ -29,6 +64,7 @@
             <e p="SeedItem.cs" t="Include" />
           </e>
           <e p="LightedCandle.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Shop" t="Include">
             <e p="ItemTooltip.cs" t="Include" />

@@ -6,6 +6,7 @@ public class PlayerAction : MonoBehaviour
 {
   public ActionMode currentActionMode = ActionMode.Harvest;
 
+  public int candleStock; //grown candles harvested
 
   public enum ActionMode
   {

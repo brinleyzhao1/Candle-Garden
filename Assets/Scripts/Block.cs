@@ -34,14 +34,17 @@ public class Block : MonoBehaviour
 
       if (isPlaceable && GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Planting)
       {
-        var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
-        newCandle.transform.parent = transform;
-        newCandle.transform.position = newCandle.transform.position+ new Vector3(0, 2, 0);
-        isPlaceable = false;
+        PlantCandle();
       }
-      // can
-      // Right button clicked on this object
     }
+  }
+
+  private void PlantCandle()
+  {
+    var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
+    newCandle.transform.parent = transform;
+    newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
+    isPlaceable = false;
   }
 
 

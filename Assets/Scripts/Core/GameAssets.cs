@@ -58,6 +58,8 @@ namespace Core
 
     [Header("core")] [SerializeField] private Money setMoney;
     public static Money money;
+    [Header("Miscellaneous")] [SerializeField] private GameObject setMatureEffect;
+    public static GameObject MatureEffect;
 
     private void Awake()
     {
@@ -77,6 +79,7 @@ namespace Core
       toolsInventory = setToolsInventory;
       buySection = setBuySection;
       money = setMoney;
+      MatureEffect = setMatureEffect;
     }
   }
 }

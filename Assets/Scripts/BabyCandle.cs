@@ -43,6 +43,11 @@ public class BabyCandle : MonoBehaviour
     Destroy(gameObject);
   }
 
+  private void HarvestCandle()
+  {
+    GameAssets.Player.candleStock += 1;
+  }
+
   // Start is called before the first frame update
   void Start()
   {
@@ -63,5 +68,14 @@ public class BabyCandle : MonoBehaviour
     }
 
     state = CandleState.Ready;
+    ReadyToHarvest();
+  }
+
+  private void ReadyToHarvest()
+  {
+    var matureEffect = Instantiate(GameAssets.MatureEffect, transform.position, Quaternion.identity);
+    matureEffect.transform.parent = transform;
+    matureEffect.transform.position = matureEffect.transform.position;
+
   }
 }
