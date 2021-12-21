@@ -12,6 +12,10 @@ namespace Core
     [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
 
+    [Header("Candles")]
+    [SerializeField] private GameObject setBabyCandle01;
+    public static GameObject BabyCandle01;
+
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
     // public static GameObject seedsTab;
@@ -52,6 +56,7 @@ namespace Core
     private void Awake()
     {
       Player = setPlayer;
+      BabyCandle01 = setBabyCandle01;
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;

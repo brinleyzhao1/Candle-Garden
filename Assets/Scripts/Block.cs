@@ -5,12 +5,6 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-  // public ok here as is a data class
-  [HideInInspector]
-  public bool isExplored = false;
-  [HideInInspector] public Block exploredFrom;
-
-  [SerializeField] private GameObject candlePrefab;
 
   public bool isPlaceable = true;
 
@@ -32,9 +26,9 @@ public class Block : MonoBehaviour
         return; //too far
       }
 
-      if (isPlaceable && GameAssets.Player.PlantingMode)
+      if (isPlaceable && GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Planting)
       {
-        var newCandle = Instantiate(candlePrefab, transform.position, Quaternion.identity);
+        var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
         newCandle.transform.parent = transform;
         newCandle.transform.position = newCandle.transform.position+ new Vector3(0, 2, 0);
         isPlaceable = false;
