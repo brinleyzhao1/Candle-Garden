@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-public class GrownUpCandle : MonoBehaviour
+public class LightedCandle : MonoBehaviour
 {
   public int lifeTime = 30;
 
