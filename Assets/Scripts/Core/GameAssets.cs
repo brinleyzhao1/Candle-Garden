@@ -10,6 +10,10 @@ namespace Core
     [Header("Core")] [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource setSFX;
+    public static AudioSource SFX;
+
     [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
     [SerializeField] private GameObject setGrownUpCandle01;
@@ -58,6 +62,7 @@ namespace Core
       Player = setPlayer;
       BabyCandle01 = setBabyCandle01;
       GrownUpCandle01 = setGrownUpCandle01;
+      SFX = setSFX;
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;

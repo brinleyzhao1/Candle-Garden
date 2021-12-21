@@ -21,7 +21,7 @@ public class GrownUpCandle : MonoBehaviour
     float timeLeft = lifeTime;
     while (timeLeft > 0)
     {
-      transform.localScale = new Vector3( 9, 9 * (timeLeft/lifeTime),9);
+      transform.localScale = new Vector3( 9, 15 * (timeLeft/lifeTime),9);
       yield return new WaitForSeconds(0.2f);
       timeLeft -= 0.2f;
     }

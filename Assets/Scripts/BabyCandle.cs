@@ -8,6 +8,7 @@ public class BabyCandle : MonoBehaviour
   public int growTime = 30;
 
   public CandleState state;
+  [SerializeField] private AudioClip LighterSound;
 
   public enum CandleState
   {
@@ -27,7 +28,7 @@ public class BabyCandle : MonoBehaviour
           return; //too far
         }
 
-        
+
         LightCandle();
       }
     }
@@ -35,7 +36,8 @@ public class BabyCandle : MonoBehaviour
 
   private void LightCandle()
   {
-    //play sfx
+    GameAssets.SFX.PlayOneShot(LighterSound);
+
     var newCandle = Instantiate(GameAssets.GrownUpCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform.parent;
     Destroy(gameObject);
