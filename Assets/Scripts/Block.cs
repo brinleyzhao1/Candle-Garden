@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-
   public bool isEmpty = true;
 
   Vector2Int gridPos;
@@ -22,7 +21,8 @@ public class Block : MonoBehaviour
     DestroyAllOtherComponents();
   }
 
-  private void  OnMouseOver () {
+  private void OnMouseOver()
+  {
     if (Input.GetMouseButtonDown(1))
     {
       if (TooFar()) return; //too far
@@ -31,21 +31,19 @@ public class Block : MonoBehaviour
       {
         if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Seeding)
         {
-           PlantCandleSeed();
+          PlantCandleSeed();
         }
         else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Placing)
         {
           if (GameAssets.Player.candleStock > 0)
           {
-             PlaceMatureCandle();
+            PlaceMatureCandle();
           }
           else
           {
             //sfx
           }
-
         }
-
       }
     }
   }
@@ -74,10 +72,20 @@ public class Block : MonoBehaviour
 
   private void PlantCandleSeed()
   {
+
+    if (GameAssets.Player.seedStock <= 0)
+    {
+      return;
+    }
+
     var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
     isEmpty = false;
+
+    GameAssets.Player.seedStock -= 1;
+    GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+
   }
 
 
@@ -104,28 +112,9 @@ public class Block : MonoBehaviour
         Destroy(block);
       }
     }
+
     // Component[] joints = GetComponents<HingeJoint>() as Component[];
     // foreach(Component joint in joints)
     //   Destroy(joint as HingeJoint);
   }
-  // public Orientation GetOrientation()
-  // {
-  //   return _orientation;
-  // }
-
-  // void OnMouseOver()
-  // {
-  //     if (Input.GetMouseButtonDown(0)) // left click
-  //     {
-  //         print("way point clicked");
-  //         // if (isEmpty)
-  //         // {
-  //         //     FindObjectOfType<TowerFactory>().AddTower(this);
-  //         // }
-  //         // else
-  //         // {
-  //         //     print("Can't place here");
-  //         // }
-  //     }
-  // }
 }

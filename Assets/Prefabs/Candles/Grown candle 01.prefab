@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2010046086946822817}
   - component: {fileID: 1968608490544751171}
   - component: {fileID: 5873859072077931609}
+  - component: {fileID: 3029784387857164832}
   m_Layer: 0
   m_Name: Grown candle 01
   m_TagString: Untagged
@@ -93,7 +94,7 @@ MeshCollider:
   m_GameObject: {fileID: 1995547902088626503}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -113,6 +114,20 @@ MonoBehaviour:
   growTime: 30
   state: 1
   LighterSound: {fileID: 8300000, guid: e6c1e56aab12d4cb9aa5a17ce84379fb, type: 3}
+--- !u!136 &3029784387857164832
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995547902088626503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.069183655
+  m_Height: 0.10197723
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.050988615, z: 0.002273255}
 --- !u!1001 &674507407568908545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,6 +139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mature Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429991862075384056, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
         type: 3}

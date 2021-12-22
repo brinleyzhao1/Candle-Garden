@@ -27,6 +27,8 @@ namespace Core
 
     [SerializeField] private TextMeshProUGUI setCandleStockNum;
     public static TextMeshProUGUI CandleStockNumTxt;
+    [SerializeField] private TextMeshProUGUI setSeedStockNumTxt;
+    public static TextMeshProUGUI SeedStockNumTxt;
 
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
@@ -83,6 +85,7 @@ namespace Core
       ToolTip = setToolTip;
       LoseHealthSFX = setLoseHealthSFX;
       CandleStockNumTxt = setCandleStockNum;
+      SeedStockNumTxt = setSeedStockNumTxt;
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;

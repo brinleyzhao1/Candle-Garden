@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class Movement : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class Movement : MonoBehaviour
 
     if (Input.GetMouseButtonDown(0))
     {
+      if (EventSystem.current.IsPointerOverGameObject())//if clicked on an UI
+      {
+        return;
+        Debug.Log("Clicked on the UI");
+      }
       MoveToCursor();
     }
 

@@ -63,7 +63,6 @@
             <e p="SeedItem.cs" t="Include" />
           </e>
           <e p="LightedCandle.cs" t="Include" />
-          <e p="MainMenu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Shop" t="Include">
             <e p="ItemTooltip.cs" t="Include" />
@@ -89,11 +88,14 @@
               <e p="InventoryUi.cs" t="Include" />
               <e p="SwitchTabs.cs" t="Include" />
             </e>
+            <e p="MainMenu.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
             <e p="Shop - Ui" t="Include">
               <e p="BuySectionUi.cs" t="Include" />
               <e p="ShopItemEntryUi.cs" t="Include" />
               <e p="ShopUi.cs" t="Include" />
             </e>
+            <e p="TutorialPanel.cs" t="Include" />
           </e>
           <e p="UnlitCandle.cs" t="Include" />
         </e>

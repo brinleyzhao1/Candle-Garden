@@ -6,11 +6,13 @@ public class PlayerAction : MonoBehaviour
 {
   public ActionMode currentActionMode = ActionMode.Harvest;
 
+  public int seedStock;
   public int candleStock; //grown candles harvested
 
   //UI effect
   [Header("UI")] [SerializeField] private GameObject lighterCircle;
   [SerializeField] private GameObject stockCircle;
+  [SerializeField] private GameObject tutorialPanel;
 
   public enum ActionMode
   {
@@ -25,6 +27,8 @@ public class PlayerAction : MonoBehaviour
   private void Start()
   {
     GameAssets.CandleStockNumTxt.text = candleStock.ToString();
+    GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+    tutorialPanel.SetActive(true);
   }
 
   public void ChangeToPlantingMode()
