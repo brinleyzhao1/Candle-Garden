@@ -20,8 +20,10 @@ namespace Core
     [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
 
-    [SerializeField] private GameObject setGrownUpCandle01;
-    public static GameObject GrownUpCandle01;
+    [SerializeField] private GameObject setGrownCandle01;
+    public static GameObject GrownCandle01;
+    [SerializeField] private GameObject setLightedCandle01;
+    public static GameObject LightedCandle01;
 
     [SerializeField] private TextMeshProUGUI setCandleStockNum;
     public static TextMeshProUGUI CandleStockNumTxt;
@@ -73,7 +75,8 @@ namespace Core
     {
       Player = setPlayer;
       BabyCandle01 = setBabyCandle01;
-      GrownUpCandle01 = setGrownUpCandle01;
+      LightedCandle01 = setLightedCandle01;
+      GrownCandle01 = setGrownCandle01;
       SFX = setSFX;
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;

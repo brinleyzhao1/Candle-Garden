@@ -1,4 +1,5 @@
 using System;
+using Core;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -8,27 +9,27 @@ public class PlayerAction : MonoBehaviour
   public int candleStock; //grown candles harvested
 
   //UI effect
-  [SerializeField] private GameObject lighterCircle;
+  [Header("UI")] [SerializeField] private GameObject lighterCircle;
+  [SerializeField] private GameObject stockCircle;
 
   public enum ActionMode
   {
-    Planting,
+    Seeding,
     Lighter,
     Harvest,
+    Placing,
     Neutral
   }
 
-  // private void Update()
-  // {
-  //   if (Input.GetKeyUp(KeyCode.K))
-  //   {
-  //     ChangeToPlantingMode();
-  //   }
-  // }
+
+  private void Start()
+  {
+    GameAssets.CandleStockNumTxt.text = candleStock.ToString();
+  }
 
   public void ChangeToPlantingMode()
   {
-    currentActionMode = ActionMode.Planting;
+    currentActionMode = ActionMode.Seeding;
   }
 
   public void ChangeLighterMode()
@@ -42,6 +43,22 @@ public class PlayerAction : MonoBehaviour
     {
       currentActionMode = ActionMode.Lighter;
       lighterCircle.SetActive(true);
+      stockCircle.SetActive(false);
+    }
+  }
+
+  public void ChangePlacingMode()
+  {
+    if (currentActionMode == ActionMode.Placing)
+    {
+      currentActionMode = ActionMode.Neutral;
+      stockCircle.SetActive(false);
+    }
+    else
+    {
+      currentActionMode = ActionMode.Placing;
+      stockCircle.SetActive(true);
+      lighterCircle.SetActive(false);
     }
   }
 }

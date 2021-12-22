@@ -30,14 +30,17 @@ public class Health : MonoBehaviour
     {
       if (IsPlayerSafe())
       {
-        StopCoroutine(DamagePerSec());
+        // print("player safe");
+        // StopCoroutine(DamageIfUnsafe());
         damageCoroutineRunning = false;
       }
       else //in danger
       {
+        // print("player in danger");
         if (damageCoroutineRunning == false)
         {
-          StartCoroutine(DamagePerSec());
+          StartCoroutine(DamageIfUnsafe());
+
         }
       }
 
@@ -54,6 +57,7 @@ public class Health : MonoBehaviour
     foreach (var candle in lightedCandles)
     {
       var distance = Vector3.Distance(candle.transform.position, GameAssets.Player.transform.position);
+      // print(distance);
       if (distance < 4f)
       {
         return true; //safe
@@ -63,10 +67,10 @@ public class Health : MonoBehaviour
     return false;
   }
 
-  private IEnumerator DamagePerSec()
+  private IEnumerator DamageIfUnsafe()
   {
     damageCoroutineRunning = true;
-    while (true)
+    while (damageCoroutineRunning == true)
     {
       currentHealth -= damagePerSec;
 
@@ -91,7 +95,6 @@ public class Health : MonoBehaviour
 
   private void UpdateUi()
   {
-
     healthBar.fillAmount = (float) currentHealth / totalHealth;
   }
 }

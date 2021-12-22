@@ -41,7 +41,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="BabyCandle.cs" t="Include" />
           <e p="Block.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="Core" t="Include">
@@ -96,6 +95,7 @@
               <e p="ShopUi.cs" t="Include" />
             </e>
           </e>
+          <e p="UnlitCandle.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

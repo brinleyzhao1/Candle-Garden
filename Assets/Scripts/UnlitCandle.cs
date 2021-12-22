@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-public class BabyCandle : MonoBehaviour
+public class UnlitCandle : MonoBehaviour
 {
   public int growTime = 30;
 
@@ -42,7 +42,11 @@ public class BabyCandle : MonoBehaviour
   void Start()
   {
     // _second += Time.deltaTime * timeScale / 2;
-    StartCoroutine(GrowUp());
+    if (state==CandleState.GrowingUp)
+    {
+      StartCoroutine(GrowUp());
+    }
+
   }
 
 
@@ -53,7 +57,7 @@ public class BabyCandle : MonoBehaviour
   {
     GameAssets.SFX.PlayOneShot(LighterSound);
 
-    var newCandle = Instantiate(GameAssets.GrownUpCandle01, transform.position, Quaternion.identity);
+    var newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform.parent;
     Destroy(gameObject);
   }
