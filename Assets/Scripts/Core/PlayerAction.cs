@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 
@@ -8,11 +7,15 @@ public class PlayerAction : MonoBehaviour
 
   public int candleStock; //grown candles harvested
 
+  //UI effect
+  [SerializeField] private GameObject lighterCircle;
+
   public enum ActionMode
   {
     Planting,
     Lighter,
-    Harvest
+    Harvest,
+    Neutral
   }
 
   // private void Update()
@@ -27,10 +30,18 @@ public class PlayerAction : MonoBehaviour
   {
     currentActionMode = ActionMode.Planting;
   }
-  public void ChangeToLighterMode()
+
+  public void ChangeLighterMode()
   {
-    currentActionMode = ActionMode.Lighter;
+    if (currentActionMode == ActionMode.Lighter)
+    {
+      currentActionMode = ActionMode.Neutral;
+      lighterCircle.SetActive(false);
+    }
+    else
+    {
+      currentActionMode = ActionMode.Lighter;
+      lighterCircle.SetActive(true);
+    }
   }
-
-
 }
