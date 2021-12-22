@@ -1,4 +1,5 @@
 using Inventory;
+using TMPro;
 using UI;
 using UnityEngine;
 
@@ -18,8 +19,12 @@ namespace Core
 
     [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
+
     [SerializeField] private GameObject setGrownUpCandle01;
     public static GameObject GrownUpCandle01;
+
+    [SerializeField] private TextMeshProUGUI setCandleStockNum;
+    public static TextMeshProUGUI CandleStockNumTxt;
 
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
@@ -58,7 +63,10 @@ namespace Core
 
     [Header("core")] [SerializeField] private Money setMoney;
     public static Money money;
-    [Header("Miscellaneous")] [SerializeField] private GameObject setMatureEffect;
+
+    [Header("Miscellaneous")] [SerializeField]
+    private GameObject setMatureEffect;
+
     public static GameObject MatureEffect;
 
     private void Awake()
@@ -71,6 +79,7 @@ namespace Core
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;
       LoseHealthSFX = setLoseHealthSFX;
+      CandleStockNumTxt = setCandleStockNum;
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;

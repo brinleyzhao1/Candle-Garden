@@ -18,22 +18,37 @@ public class BabyCandle : MonoBehaviour
 
   private void OnMouseOver()
   {
-    if (Input.GetMouseButtonDown(1))
+    if (Input.GetMouseButtonDown(1) && state == CandleState.Ready)
     {
-      if (state == CandleState.Ready && GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Lighter)
+      float distanceFromPlayer = Vector3.Distance(GameAssets.Player.transform.position, transform.position);
+      if (distanceFromPlayer > 4)
       {
-        float distanceFromPlayer = Vector3.Distance(GameAssets.Player.transform.position, transform.position);
-        if (distanceFromPlayer > 4)
-        {
-          return; //too far
-        }
+        return; //too far
+      }
 
 
+      if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Lighter)
+      {
         LightCandle();
+      }
+      else
+      {
+        HarvestCandle();
       }
     }
   }
 
+  // Start is called before the first frame update
+  void Start()
+  {
+    // _second += Time.deltaTime * timeScale / 2;
+    StartCoroutine(GrowUp());
+  }
+
+
+
+
+  //private -----
   private void LightCandle()
   {
     GameAssets.SFX.PlayOneShot(LighterSound);
@@ -46,14 +61,10 @@ public class BabyCandle : MonoBehaviour
   private void HarvestCandle()
   {
     GameAssets.Player.candleStock += 1;
+    GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
+    Destroy(gameObject);
   }
 
-  // Start is called before the first frame update
-  void Start()
-  {
-    // _second += Time.deltaTime * timeScale / 2;
-    StartCoroutine(GrowUp());
-  }
 
   private IEnumerator GrowUp()
   {
@@ -76,6 +87,5 @@ public class BabyCandle : MonoBehaviour
     var matureEffect = Instantiate(GameAssets.MatureEffect, transform.position, Quaternion.identity);
     matureEffect.transform.parent = transform;
     matureEffect.transform.position = matureEffect.transform.position;
-
   }
 }
