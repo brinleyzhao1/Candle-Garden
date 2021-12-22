@@ -45,11 +45,18 @@ public class Block : MonoBehaviour
           }
         }
       }
+      else //not empty
+      {
+        GameAssets.SFX.PlayOneShot(GameAssets.ErrorSFX);
+      }
     }
   }
 
   private void PlaceMatureCandle()
   {
+
+    GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
+
     var newCandle = Instantiate(GameAssets.GrownCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
@@ -72,11 +79,12 @@ public class Block : MonoBehaviour
 
   private void PlantCandleSeed()
   {
-
     if (GameAssets.Player.seedStock <= 0)
     {
       return;
     }
+
+    GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
 
     var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform;
@@ -85,7 +93,6 @@ public class Block : MonoBehaviour
 
     GameAssets.Player.seedStock -= 1;
     GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
-
   }
 
 

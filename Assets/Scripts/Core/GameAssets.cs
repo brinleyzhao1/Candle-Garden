@@ -11,11 +11,27 @@ namespace Core
     [Header("Core")] [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
 
+    #region Audio
+
     [Header("Audio")] [SerializeField] private AudioSource setSFX;
     public static AudioSource SFX;
 
     [SerializeField] private AudioClip setLoseHealthSFX;
     public static AudioClip LoseHealthSFX;
+
+    [SerializeField] private AudioClip setErrorSFX;
+    public static AudioClip ErrorSFX;
+
+    [SerializeField] private AudioClip setSeedingSFX;
+    public static AudioClip SeedingSFX;
+
+
+    [SerializeField] private AudioClip setPlacingSFX;
+    public static AudioClip PlacingSFX;
+
+    #endregion
+
+    #region Candles
 
     [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
@@ -30,6 +46,8 @@ namespace Core
     [SerializeField] private TextMeshProUGUI setSeedStockNumTxt;
     public static TextMeshProUGUI SeedStockNumTxt;
 
+    #endregion
+
     // [Header("Inventory Tabs")]
     // [SerializeField] private GameObject setSeedsTab;
     // public static GameObject seedsTab;
@@ -39,6 +57,9 @@ namespace Core
     //
     // [SerializeField] private GameObject setToolsTab;
     // public static GameObject toolsTab;
+
+
+    #region Inventories
 
     [Header("Inventories")] [SerializeField]
     private Inventories.Inventory setSeedsInventory;
@@ -54,6 +75,10 @@ namespace Core
     [SerializeField] private ActionStore setActionStore;
     public static ActionStore actionStore;
 
+    #endregion
+
+    #region Shop Panel
+
     [Header("shop panel")] [SerializeField]
     private BuySectionUi setBuySection;
 
@@ -64,6 +89,8 @@ namespace Core
 
     [SerializeField] private GameObject setToolTip;
     public static GameObject ToolTip;
+
+    #endregion
 
     [Header("core")] [SerializeField] private Money setMoney;
     public static Money money;
@@ -83,9 +110,13 @@ namespace Core
       actionStore = setActionStore;
       shopEntry = setShopEntryPrefab;
       ToolTip = setToolTip;
+
       LoseHealthSFX = setLoseHealthSFX;
       CandleStockNumTxt = setCandleStockNum;
       SeedStockNumTxt = setSeedStockNumTxt;
+      ErrorSFX = setErrorSFX;
+      SeedingSFX = setSeedingSFX;
+      PlacingSFX = setPlacingSFX;
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;
