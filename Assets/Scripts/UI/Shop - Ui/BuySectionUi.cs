@@ -1,4 +1,3 @@
-
 using Core;
 using Inventory;
 using TMPro;
@@ -14,14 +13,19 @@ namespace UI
   /// </summary>
   public class BuySectionUi : MonoBehaviour
   {
-    [Header("children")]
-    [SerializeField] private TextMeshProUGUI titleText;
+    [Header("children")] [SerializeField] private TextMeshProUGUI itemNameText;
+
     [SerializeField] private Image iconImage;
-    [SerializeField] private TextMeshProUGUI descriptionText;
+
+    // [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject buyButton;
     [SerializeField] private TextMeshProUGUI priceText;
+    [SerializeField] private TextMeshProUGUI amountText;
 
     private InventoryItem _thisItem;
+
+    private int currentTransactionAmount = 1;
+    private int currentTransactionMoney;
 
 
     /// <summary>
@@ -32,32 +36,56 @@ namespace UI
     {
       _thisItem = item;
 
-      titleText.text = item.GetDisplayName();
+      itemNameText.text = item.GetDisplayName();
       iconImage.sprite = item.GetIcon();
-      descriptionText.text = item.GetDescription();
-      priceText.text = item.GetPrice().ToString();
+      // descriptionText.text = item.GetDescription();
+
+      UpdateTransactionMoney();
+      amountText.text = currentTransactionAmount.ToString();
 
       //check if player has enough money
       if (GameAssets.money.GetMoneyHave() >= _thisItem.GetPrice())
       {
-        buyButton.GetComponent<Image>().color=Color.white;
+        buyButton.GetComponent<Image>().color = Color.white;
         buyButton.GetComponent<Button>().interactable = true;
       }
       else //if not have enough money
       {
-        buyButton.GetComponent<Image>().color=Color.gray;
+        buyButton.GetComponent<Image>().color = Color.gray;
         buyButton.GetComponent<Button>().interactable = false;
       }
     }
 
-    public void ButtonBuy()
+    public void BtnBuy()
     {
-      //todo: put in corresponding inventory depending on the type of the item
+      GameAssets.seedsInventory.AddToFirstEmptySlot(_thisItem, currentTransactionAmount);
+      GameAssets.money.AddOrMinusMoney(-currentTransactionMoney);
+      //todo:add to inventory
+    }
 
-      GameAssets.seedsInventory.AddToFirstEmptySlot(_thisItem, 1);
-      GameAssets.money.AddOrMinusMoney(-_thisItem.GetPrice());
+    public void BtnAddOne()
+    {
+      currentTransactionAmount += 1;
+      amountText.text = currentTransactionAmount.ToString();
+      UpdateTransactionMoney();
     }
 
 
+    public void BtnMinusOne()
+    {
+      currentTransactionAmount -= 1;
+      if (currentTransactionAmount <= 0)
+      {
+        currentTransactionAmount = 0;
+      }
+      amountText.text = currentTransactionAmount.ToString();
+      UpdateTransactionMoney();
+    }
+
+    private void UpdateTransactionMoney()
+    {
+      currentTransactionMoney = currentTransactionAmount * _thisItem.GetPrice();
+      priceText.text = currentTransactionMoney.ToString();
+    }
   }
 }

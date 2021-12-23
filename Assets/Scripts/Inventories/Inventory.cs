@@ -15,9 +15,9 @@ namespace Inventories
   {
     // CONFIG DATA
     [Tooltip("Allowed size")] [SerializeField]
-    int inventorySize = 8;
+    int inventorySize = 4;
 
-    public CategoryEnum category;
+    // public CategoryEnum category;
 
     // STATE, the actual inventory
     InventorySlot[] _slots;
@@ -48,11 +48,11 @@ namespace Inventories
     /// <summary>
     /// Convenience for getting the player's inventory.
     /// </summary>
-    public static Inventory GetPlayerInventory()
-    {
-      var player = GameObject.FindWithTag("Inventory");
-      return player.GetComponent<Inventory>();
-    }
+    // public static Inventory GetPlayerInventory()
+    // {
+    //   var player = GameObject.FindWithTag("Inventory");
+    //   return player.GetComponent<Inventory>();
+    // }
 
     /// <summary>
     /// Could this item fit anywhere in the inventory?

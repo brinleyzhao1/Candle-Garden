@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5077629825257903183}
   - component: {fileID: 4307114119095255001}
   - component: {fileID: 3169634992827247465}
+  - component: {fileID: 8333009691541140935}
   m_Layer: 5
   m_Name: Shop  Slot
   m_TagString: Untagged
@@ -135,7 +136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4674370665451219555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -5077629825257903183}
+        m_TargetAssemblyTypeName: UI.ShopItemEntryUi, Assembly-CSharp
+        m_MethodName: BtnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3169634992827247465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +163,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltipPrefab: {fileID: 2358690016546199800, guid: 20fa10ee66c52487ba1af3d1fa2b1e29,
     type: 3}
+--- !u!114 &8333009691541140935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674370665451219581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff08048678747cb89b2483fd4587a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryImage: {fileID: 4674370666642918995}
 --- !u!1 &4674370666642919021
 GameObject:
   m_ObjectHideFlags: 0

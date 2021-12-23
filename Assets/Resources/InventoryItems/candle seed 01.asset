@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66b5636a0dc8412d9a4380cf4f9cfcee, type: 3}
-  m_Name: Potato seed 1
+  m_Name: candle seed 01
   m_EditorClassIdentifier: 
-  displayName: Cucumber Seeds
-  icon: {fileID: 21300000, guid: b91df5183a11e425b978d115dc92b6e7, type: 3}
-  description: 'This is Potato Seeds.
-
-'
+  displayName: Candle Seeds 01
+  type: 0
+  icon: {fileID: 21300000, guid: eff083027451a44a8b263dd9b9b60f26, type: 3}
+  description: This is Cucumber Seeds
   stackable: 1
-  buyInPrice: 10
+  buyInPrice: 5

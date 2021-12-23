@@ -30,8 +30,8 @@ namespace UI
     /// <summary>
     /// to be called when the button is selected
     /// </summary>
-    public void ButtonSelect()
-    {
+    public void BtnSelect()
+    {GameAssets.buySection.gameObject.SetActive(true);
       GameAssets.buySection.SetDisplayedItem(_thisItem);
     }
 

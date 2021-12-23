@@ -18,6 +18,12 @@ namespace UI
 
     public List<InventoryItem> itemsForSell = new List<InventoryItem>();
 
+
+    private void Start()
+    {
+      SetUpShopList(itemsForSell);//debug
+    }
+
     private void OnEnable()
     {
       SetUpShopList(itemsForSell);

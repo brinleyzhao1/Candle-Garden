@@ -10,13 +10,24 @@ namespace UI
   /// </summary>
   public class InventorySlotUi : MonoBehaviour, IItemHolder, IDragContainer<InventoryItem>
   {
-    [SerializeField] InventoryItemIcon iconInChild = null; // own child
+    // CONFIG DATA
+    [SerializeField] InventoryItemIcon iconInChild = null;
+    [SerializeField] int index = 0;
+    [SerializeField] private Color selectedColor;
 
-
-    // STATE
-    public int index;
-    InventoryItem _item;
     Inventories.Inventory inventory;
+
+    // CACHE
+    // ActionStore actionStore;
+
+
+    private void Awake()
+    {
+      // actionStore = GameAssets.actionStore;
+      // actionStore.StoreUpdated += UpdateIcon;
+
+      // UpdateIcon(); //update once in the beginning
+    }
 
 
     public void Setup(Inventories.Inventory inventory, int index)
@@ -26,24 +37,22 @@ namespace UI
       iconInChild.SetItem(inventory.GetItemInSlot(index), inventory.GetNumberInSlot(index));
     }
 
-    public int MaxAcceptable(InventoryItem item)
+    private void Start()
     {
-      if (inventory.HasSpaceFor(item))
-      {
-        return int.MaxValue;
-      }
-
-      return 0;
+      // actionStore.StoreUpdated += UpdateIcon;
     }
+
+    // PUBLIC
 
     public void AddItems(InventoryItem item, int number)
     {
-      inventory.AddItemToSlot(index, item, number);
+      print("add action item");
+      GameAssets.actionStore.AddActionItem(item, index, number);
     }
 
     public InventoryItem GetItem()
     {
-      return inventory.GetItemInSlot(index);
+      return GameAssets.actionStore.GetActionItem(index);
     }
 
     public int GetIndex()
@@ -51,9 +60,15 @@ namespace UI
       return index;
     }
 
+
     public int GetNumber()
     {
       return inventory.GetNumberInSlot(index);
+    }
+
+    public int MaxAcceptable(InventoryItem item)
+    {
+      return GameAssets.actionStore.MaxAcceptable(item, index);
     }
 
     public void RemoveItems(int number)
@@ -61,6 +76,36 @@ namespace UI
       inventory.RemoveFromSlot(index, number);
     }
 
+    private bool IsSelected()
+    {
+      print("not implement3ed");
+      return false;
+      // throw NotImplementedException;
+      // return index == actionStore.currentIndexSelected;
+    }
 
-  }
+    // PRIVATE
+
+    void UpdateIcon()
+    {
+      iconInChild.SetItem(GetItem(), GetNumber());
+
+      //if is selected, highlight
+      // HighlightIfSelected();
+    }
+
+    private void HighlightIfSelected()
+    {
+      var slotImage = GetComponent<Image>();
+
+      if (IsSelected())
+      {
+        // slotImage.color = Color.green;
+        slotImage.color = selectedColor;
+      }
+      else
+      {
+        slotImage.color = Color.white;
+      }
+    }
 }

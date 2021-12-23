@@ -9,6 +9,7 @@ namespace UI.Action_Bar
 {
   /// <summary>
   /// The UI slot for the player action bar.
+  /// combined actionSlotUi.cs and InventorySlotUi.cs
   /// </summary>
   public class ActionSlotUi : MonoBehaviour, IItemHolder, IDragContainer<InventoryItem>
   {
@@ -17,19 +18,26 @@ namespace UI.Action_Bar
     [SerializeField] int index = 0;
     [SerializeField] private Color selectedColor;
 
-    // CACHE
-    ActionStore actionStore;
+    Inventories.Inventory inventory;
 
-    // LIFECYCLE METHODS
+    // CACHE
+    // ActionStore actionStore;
+
+
     private void Awake()
     {
-      print(0);
-      actionStore = GameAssets.actionStore;
-      print(1);
-      actionStore.StoreUpdated += UpdateIcon;
+      // actionStore = GameAssets.actionStore;
+      // actionStore.StoreUpdated += UpdateIcon;
 
-      // print(2);
       // UpdateIcon(); //update once in the beginning
+    }
+
+
+    public void Setup(Inventories.Inventory inventory, int index)
+    {
+      this.inventory = inventory;
+      this.index = index;
+      iconInChild.SetItem(inventory.GetItemInSlot(index), inventory.GetNumberInSlot(index));
     }
 
     private void Start()
@@ -52,13 +60,13 @@ namespace UI.Action_Bar
 
     public int GetIndex()
     {
-      throw new NotImplementedException();
+      return index;
     }
 
 
     public int GetNumber()
     {
-      return actionStore.GetNumber(index);
+      return inventory.GetNumberInSlot(index);
     }
 
     public int MaxAcceptable(InventoryItem item)
@@ -68,12 +76,15 @@ namespace UI.Action_Bar
 
     public void RemoveItems(int number)
     {
-      actionStore.RemoveItems(index, number);
+      inventory.RemoveFromSlot(index, number);
     }
 
     private bool IsSelected()
     {
-      return index == actionStore.currentIndexSelected;
+      print("not implement3ed");
+      return false;
+      // throw NotImplementedException;
+      // return index == actionStore.currentIndexSelected;
     }
 
     // PRIVATE
