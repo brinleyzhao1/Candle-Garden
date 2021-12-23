@@ -69,9 +69,6 @@
             <e p="TooltipSpawner.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="Action Bar" t="Include">
-              <e p="ActionSlotUi.cs" t="Include" />
-            </e>
             <e p="Dragging" t="Include">
               <e p="DragItem.cs" t="Include" />
               <e p="IDragContainer.cs" t="Include" />

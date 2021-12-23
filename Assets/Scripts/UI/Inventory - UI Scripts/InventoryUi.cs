@@ -1,12 +1,6 @@
-using Core;
-using Inventory;
+
 using UnityEngine;
-using Inventories;using System;
-using Core;
-using Inventory;
-using UI.Dragging;
-using UnityEngine;
-using UnityEngine.UI;
+
 
 namespace UI
 {
@@ -28,7 +22,7 @@ namespace UI
     private void Awake()
     {
 
-      // _thisInventory = GetCorrespondingInventory();
+      _thisInventory = GetComponent<Inventories.Inventory>();
       _thisInventory.InventoryUpdated += Redraw;
 
       Redraw();
@@ -51,26 +45,6 @@ namespace UI
       }
     }
 
-    // private Inventories.Inventory GetCorrespondingInventory()
-    // {
-    //   if (categoryEnum == CategoryEnum.Seed)
-    //   {
-    //     return GameAssets.seedsInventory;
-    //   }
-    //
-    //   if (categoryEnum == CategoryEnum.Produce)
-    //   {
-    //     return GameAssets.produceInventory;
-    //   }
-    //
-    //   if (categoryEnum == CategoryEnum.Tools)
-    //   {
-    //     return GameAssets.toolsInventory;
-    //   }
-    //
-    //   Debug.LogError("cannot find the corresponding inventory.");
-    //   return null; //error
-    // }
 
 
     #endregion

@@ -61,19 +61,10 @@ namespace Core
 
     #region Inventories
 
-    [Header("Inventories")] [SerializeField]
-    private Inventories.Inventory setSeedsInventory;
+    [Header("Inventories")]
+    [SerializeField] private Inventories.Inventory setInventory;
+    public static Inventories.Inventory Inventory;
 
-    public static Inventories.Inventory seedsInventory;
-
-    [SerializeField] private Inventories.Inventory setProduceInventory;
-    public static Inventories.Inventory produceInventory;
-
-    [SerializeField] private Inventories.Inventory setToolsInventory;
-    public static Inventories.Inventory toolsInventory;
-
-    [SerializeField] private ActionStore setActionStore;
-    public static ActionStore actionStore;
 
     #endregion
 
@@ -87,8 +78,7 @@ namespace Core
     [SerializeField] private ShopItemEntryUi setShopEntryPrefab;
     public static ShopItemEntryUi shopEntry;
 
-    [SerializeField] private GameObject setToolTip;
-    public static GameObject ToolTip;
+
 
     #endregion
 
@@ -107,9 +97,9 @@ namespace Core
       LightedCandle01 = setLightedCandle01;
       GrownCandle01 = setGrownCandle01;
       SFX = setSFX;
-      actionStore = setActionStore;
+
       shopEntry = setShopEntryPrefab;
-      ToolTip = setToolTip;
+
 
       LoseHealthSFX = setLoseHealthSFX;
       CandleStockNumTxt = setCandleStockNum;
@@ -120,9 +110,8 @@ namespace Core
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;
-      seedsInventory = setSeedsInventory;
-      produceInventory = setProduceInventory;
-      toolsInventory = setToolsInventory;
+      Inventory = setInventory;
+
       buySection = setBuySection;
       money = setMoney;
       MatureEffect = setMatureEffect;

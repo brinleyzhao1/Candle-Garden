@@ -58,7 +58,7 @@ namespace UI
 
     public void BtnBuy()
     {
-      GameAssets.seedsInventory.AddToFirstEmptySlot(_thisItem, currentTransactionAmount);
+      GameAssets.Inventory.AddToFirstEmptySlot(_thisItem, currentTransactionAmount);
       GameAssets.money.AddOrMinusMoney(-currentTransactionMoney);
       //todo:add to inventory
     }

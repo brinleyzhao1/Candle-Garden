@@ -1,6 +1,8 @@
+using Core;
 using Inventory;
 using UI.Dragging;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 namespace UI
@@ -47,12 +49,12 @@ namespace UI
     public void AddItems(InventoryItem item, int number)
     {
       print("add action item");
-      GameAssets.actionStore.AddActionItem(item, index, number);
+      inventory.AddItemToSlot(index,item,number);
     }
 
     public InventoryItem GetItem()
     {
-      return GameAssets.actionStore.GetActionItem(index);
+      return inventory.GetItemInSlot(index);
     }
 
     public int GetIndex()
@@ -68,7 +70,8 @@ namespace UI
 
     public int MaxAcceptable(InventoryItem item)
     {
-      return GameAssets.actionStore.MaxAcceptable(item, index);
+      return 100;
+      // return GameAssets.actionStore.MaxAcceptable(item, index);
     }
 
     public void RemoveItems(int number)
@@ -108,4 +111,5 @@ namespace UI
         slotImage.color = Color.white;
       }
     }
+  }
 }
