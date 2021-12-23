@@ -143,7 +143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4674370665451219581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36e94780c33d4a21a73e5238291e7c3e, type: 3}
   m_Name: 
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b94e6f41c7ff4cbc883268bd9df099e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eff083027451a44a8b263dd9b9b60f26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
