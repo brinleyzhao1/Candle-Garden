@@ -1,4 +1,5 @@
 using Core;
+using Inventories;
 using Inventory;
 using TMPro;
 using UI.Dragging;
@@ -12,8 +13,8 @@ namespace UI
   {
     private InventoryItem _thisItem;
 
-    [Header("from children")]
-    [SerializeField] private Image entryImage;
+    [Header("from children")] [SerializeField]
+    private Image entryImage;
     // [SerializeField] private TMP_Text entryNameText;
     // [SerializeField] private TMP_Text entryPriceText;
 
@@ -22,7 +23,7 @@ namespace UI
     {
       entryImage.sprite = item.GetIcon();
       // entryNameText.text = item.GetDisplayName();
-      // entryPriceText.text = item.GetPrice().ToString();
+      // entryPriceText.text = item.GetBuyInPrice().ToString();
 
       _thisItem = item;
     }
@@ -31,8 +32,9 @@ namespace UI
     /// to be called when the button is selected
     /// </summary>
     public void BtnSelect()
-    {GameAssets.buySection.gameObject.SetActive(true);
-      GameAssets.buySection.SetDisplayedItem(_thisItem);
+    {
+      GameAssets.buyCart.gameObject.SetActive(true);
+      GameAssets.buyCart.SetDisplayedItem(_thisItem, 100);//sellindex wouldnt matter here
     }
 
 

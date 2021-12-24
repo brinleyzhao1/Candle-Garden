@@ -28,6 +28,8 @@ namespace Core
 
     [SerializeField] private AudioClip setPlacingSFX;
     public static AudioClip PlacingSFX;
+    [SerializeField] private AudioClip setMoneySFX;
+    public static AudioClip MoneySFX;
 
     #endregion
 
@@ -61,24 +63,25 @@ namespace Core
 
     #region Inventories
 
-    [Header("Inventories")]
-    [SerializeField] private Inventories.Inventory setInventory;
-    public static Inventories.Inventory Inventory;
+    [Header("Inventories")] [SerializeField]
+    private Inventories.Inventory setInventory;
 
+    public static Inventories.Inventory Inventory;
 
     #endregion
 
     #region Shop Panel
 
     [Header("shop panel")] [SerializeField]
-    private BuySectionUi setBuySection;
+    private BuyCartUi setBuyCart;
 
-    public static BuySectionUi buySection;
+    public static BuyCartUi buyCart;
+
+    [SerializeField] private BuyCartUi setSellCart;
+    public static BuyCartUi sellCart;
 
     [SerializeField] private ShopItemEntryUi setShopEntryPrefab;
     public static ShopItemEntryUi shopEntry;
-
-
 
     #endregion
 
@@ -107,12 +110,16 @@ namespace Core
       ErrorSFX = setErrorSFX;
       SeedingSFX = setSeedingSFX;
       PlacingSFX = setPlacingSFX;
+      MoneySFX = setMoneySFX;
+
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;
       Inventory = setInventory;
 
-      buySection = setBuySection;
+      buyCart = setBuyCart;
+      sellCart = setSellCart;
+
       money = setMoney;
       MatureEffect = setMatureEffect;
     }

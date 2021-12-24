@@ -1,4 +1,5 @@
 using Core;
+using Inventories;
 using Inventory;
 using TMPro;
 using UnityEngine;
@@ -22,17 +23,17 @@ namespace Shop
     public void Setup(InventoryItem item, int index)
     {
       titleText.text = item.GetDisplayName();
-      bodyText.text = item.GetPrice().ToString();
+      bodyText.text = item.GetBuyInPrice().ToString();
       thisItem = item;
       thisIndex = index;
     }
 
     public void ButtonBuy()
     {
-      int price = thisItem.GetPrice();
+      int price = thisItem.GetBuyInPrice();
       if (price <= Money.Instance.GetMoneyHave())
       {
-        Money.Instance.AddOrMinusMoney(-thisItem.GetPrice());
+        Money.Instance.AddOrMinusMoney(-thisItem.GetBuyInPrice());
 
         AddOneToCorrespondingInventory();
 
@@ -47,7 +48,7 @@ namespace Shop
     public void ButtonSell()
     {
 
-      Money.Instance.AddOrMinusMoney(thisItem.GetPrice());
+      Money.Instance.AddOrMinusMoney(thisItem.GetBuyInPrice());
       MinusOneFromCorrespondingInventory();
       print("sell button");
     }

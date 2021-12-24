@@ -22,16 +22,25 @@
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI Prefab/action slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI Prefab/action slot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/InventoryItems/candle seed 01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/InventoryItems/candle seed 01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/InventoryItems/mature candle 01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/InventoryItems/mature candle 01.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/SeedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/SeedItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ItemTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ItemTooltip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Action Bar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/ActionSlotUi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/ActionSlotUi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/TooltipSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/TooltipSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IItemHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Dragging/IItemHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryDragItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryDragItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryItemIcon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryItemIcon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopItemEntryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopItemEntryUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopUi.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +53,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopItemEntryUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,8 +66,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Editor/UserInterface.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/SeedItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SellSlotUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Audio/SFX.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,14 +106,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopItemEntryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Action Bar/ActionSlotUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySectionUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ItemTooltip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuySellCartUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/SellSlotUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/ShopItemEntryUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" />
       </list>
     </option>
   </component>
@@ -159,7 +174,7 @@
       <workItem from="1640007894662" duration="7466000" />
       <workItem from="1640092151472" duration="3617000" />
       <workItem from="1640109187828" duration="1364000" />
-      <workItem from="1640179884870" duration="9099000" />
+      <workItem from="1640179884870" duration="12786000" />
     </task>
     <servers />
   </component>
@@ -184,17 +199,17 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="SettingsEditor" timestamp="1640275476970">
+    <state x="0" y="0" key="SettingsEditor" timestamp="1640355871495">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640275476970" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640355871495" />
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog" timestamp="1640024953759">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1640024953759" />
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640275468704">
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640356377663">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640275468704" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640356377663" />
   </component>
 </project>

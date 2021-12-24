@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-namespace Inventory
+namespace Inventories
 {
   /// <summary>
   /// A ScriptableObject that represents any item that can be put in an
@@ -31,6 +31,8 @@ namespace Inventory
 
     [Tooltip("price to buy from shop.")] [SerializeField]
      int buyInPrice;
+    [Tooltip("price to sell to shop.")] [SerializeField]
+     int sellOutPrice;
 
 
     // STATE
@@ -55,14 +57,18 @@ namespace Inventory
       return displayName;
     }
 
-    public string GetDescription()
-    {
-      return description;
-    }
+    // public string GetDescription()
+    // {
+    //   return description;
+    // }
 
-    public int GetPrice()
+    public int GetBuyInPrice()
     {
       return buyInPrice;
+    }
+    public int GetSellOutPrice()
+    {
+      return sellOutPrice;
     }
   }
 }

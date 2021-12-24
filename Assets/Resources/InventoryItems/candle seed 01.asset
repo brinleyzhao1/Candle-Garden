@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b5636a0dc8412d9a4380cf4f9cfcee, type: 3}
   m_Name: candle seed 01
   m_EditorClassIdentifier: 
-  displayName: Candle Seeds 01
+  displayName: Candle Seeds
   type: 0
   icon: {fileID: 21300000, guid: eff083027451a44a8b263dd9b9b60f26, type: 3}
   description: This is Cucumber Seeds
   stackable: 1
   buyInPrice: 5
+  sellOutPrice: 3

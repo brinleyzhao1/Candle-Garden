@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Core;
+using Inventories;
 using Inventory;
 using UnityEngine;
 
@@ -27,7 +28,7 @@ namespace UI
     private void OnEnable()
     {
       SetUpShopList(itemsForSell);
-      // GameAssets.buySection
+      // GameAssets.buyCart
       //   .SetDisplayedItem(itemsForSell[0]); //when first open, automatically show the first item for sell
     }
 

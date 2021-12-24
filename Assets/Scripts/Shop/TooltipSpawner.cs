@@ -1,5 +1,6 @@
 using System;
 using Core;
+using Inventories;
 using Inventory;
 using UI;
 using UI.Dragging;

@@ -1,3 +1,4 @@
+using Inventories;
 using Inventory;
 using TMPro;
 using UnityEngine;

@@ -1,4 +1,5 @@
 using Core;
+using Inventories;
 using Inventory;
 using UI.Dragging;
 using UnityEngine;
@@ -48,7 +49,7 @@ namespace UI
 
     public void AddItems(InventoryItem item, int number)
     {
-      print("add action item");
+      // print("add action item");
       inventory.AddItemToSlot(index,item,number);
     }
 
@@ -79,37 +80,37 @@ namespace UI
       inventory.RemoveFromSlot(index, number);
     }
 
-    private bool IsSelected()
-    {
-      print("not implement3ed");
-      return false;
-      // throw NotImplementedException;
-      // return index == actionStore.currentIndexSelected;
-    }
+    // private bool IsSelected()
+    // {
+    //   // print("not implement3ed");
+    //   return false;
+    //   // throw NotImplementedException;
+    //   // return index == actionStore.currentIndexSelected;
+    // }
 
     // PRIVATE
 
-    void UpdateIcon()
-    {
-      iconInChild.SetItem(GetItem(), GetNumber());
+    // void UpdateIcon()
+    // {
+    //   iconInChild.SetItem(GetItem(), GetNumber());
+    //
+    //   //if is selected, highlight
+    //   // HighlightIfSelected();
+    // }
 
-      //if is selected, highlight
-      // HighlightIfSelected();
-    }
-
-    private void HighlightIfSelected()
-    {
-      var slotImage = GetComponent<Image>();
-
-      if (IsSelected())
-      {
-        // slotImage.color = Color.green;
-        slotImage.color = selectedColor;
-      }
-      else
-      {
-        slotImage.color = Color.white;
-      }
-    }
+    // private void HighlightIfSelected()
+    // {
+    //   var slotImage = GetComponent<Image>();
+    //
+    //   if (IsSelected())
+    //   {
+    //     // slotImage.color = Color.green;
+    //     slotImage.color = selectedColor;
+    //   }
+    //   else
+    //   {
+    //     slotImage.color = Color.white;
+    //   }
+    // }
   }
 }

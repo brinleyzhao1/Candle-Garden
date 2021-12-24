@@ -1,3 +1,4 @@
+using Inventories;
 using UnityEngine;
 
 namespace Inventory

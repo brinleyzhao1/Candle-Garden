@@ -21,8 +21,7 @@ namespace UI
 
     private void Awake()
     {
-
-      _thisInventory = GetComponent<Inventories.Inventory>();
+      _thisInventory = FindObjectOfType<Inventories.Inventory>();
       _thisInventory.InventoryUpdated += Redraw;
 
       Redraw();
