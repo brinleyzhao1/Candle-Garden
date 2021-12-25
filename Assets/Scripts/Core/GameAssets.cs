@@ -64,13 +64,12 @@ namespace Core
 
     #region Inventories
 
-    [Header("Inventories")]
+    [Header("Inventories")] [SerializeField]
+    private Inventories.Inventory setInventory;
 
-    [SerializeField] private Inventories.Inventory setInventory;
     public static Inventories.Inventory inventory;
 
- [SerializeField]
-    private InventoryItem setmatureCandle;
+    [SerializeField] private InventoryItem setmatureCandle;
 
     public static InventoryItem matureCandle;
 
@@ -94,10 +93,13 @@ namespace Core
     [Header("core")] [SerializeField] private Money setMoney;
     public static Money money;
 
+    [SerializeField] private EndGame setEndGamePanel;
+    public static EndGame EndGamePanel;
+
     [Header("Miscellaneous")] [SerializeField]
     private GameObject setMatureEffect;
-
     public static GameObject MatureEffect;
+
 
     private void Awake()
     {
@@ -124,6 +126,7 @@ namespace Core
       inventory = setInventory;
 
       matureCandle = setmatureCandle;
+      EndGamePanel = setEndGamePanel;
 
       buyCart = setBuyCart;
       sellCart = setSellCart;

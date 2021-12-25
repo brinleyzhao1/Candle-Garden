@@ -101,5 +101,10 @@ namespace Core
         Time.timeScale = 1;
       }
     }
+
+    public int GetCurrentDay()
+    {
+      return Day;
+    }
   }
 }

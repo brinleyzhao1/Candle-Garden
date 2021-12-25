@@ -90,7 +90,8 @@ public class Health : MonoBehaviour
 
   private void Death()
   {
-    print("game over");
+    GameAssets.EndGamePanel.gameObject.SetActive(true);
+    GameAssets.SFX.Stop();
   }
 
   private void UpdateUi()
