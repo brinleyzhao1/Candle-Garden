@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Core;
+using Inventories;
 using UnityEngine;
 
 public class Block : MonoBehaviour
@@ -31,12 +32,11 @@ public class Block : MonoBehaviour
       {
         if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Seeding)
         {
-          PlantCandleSeed();
+          TryPlantCandleSeed();
         }
         else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Placing)
         {
-            TryPlaceMatureCandle();
-
+          TryPlaceMatureCandle();
         }
       }
       else //not empty
@@ -48,11 +48,7 @@ public class Block : MonoBehaviour
 
   private void TryPlaceMatureCandle()
   {
-    int candleSlotInInventory = GameAssets.inventory.HasItem(GameAssets.matureCandle);
-    if ( candleSlotInInventory == -1)
-    {
-      return;
-    }
+    if (TryRemoveOne(GameAssets.matureCandle)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
 
@@ -61,9 +57,21 @@ public class Block : MonoBehaviour
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
 
     // GameAssets.Player.candleStock -= 1;
-    GameAssets.inventory.RemoveFromSlot(candleSlotInInventory,1 );
+
     // GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
     isEmpty = false;
+  }
+
+  private static bool TryRemoveOne(InventoryItem item)
+  {
+    int slotInInventory = GameAssets.inventory.HasItem(item);
+    if (slotInInventory == -1)
+    {
+      return true;
+    }
+
+    GameAssets.inventory.RemoveFromSlot(slotInInventory, 1);
+    return false;
   }
 
   private bool TooFar()
@@ -77,12 +85,9 @@ public class Block : MonoBehaviour
     return false;
   }
 
-  private void PlantCandleSeed()
+  private void TryPlantCandleSeed()
   {
-    if (GameAssets.Player.seedStock <= 0)
-    {
-      return;
-    }
+    if (TryRemoveOne(GameAssets.SeedObject)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
 
@@ -91,8 +96,8 @@ public class Block : MonoBehaviour
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
     isEmpty = false;
 
-    GameAssets.Player.seedStock -= 1;
-    GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+
+    // GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
   }
 
 

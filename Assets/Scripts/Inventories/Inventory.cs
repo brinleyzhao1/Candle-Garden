@@ -36,7 +36,12 @@ namespace Inventories
     private void Awake()
     {
       _slots = new InventorySlot[inventorySize];
-      // InventoryUpdated?.Invoke();
+    }
+
+    private void Start()
+    {
+      AddToFirstEmptySlot(GameAssets.LighterObject, 1);
+      AddToFirstEmptySlot(GameAssets.SeedObject, 2);
     }
 
 

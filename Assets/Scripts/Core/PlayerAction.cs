@@ -39,16 +39,16 @@ namespace Core
     {
       inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Lighter;
-      lighterCircle.SetActive(true);
-      stockCircle.SetActive(false);
+      // lighterCircle.SetActive(true);
+      // stockCircle.SetActive(false);
     }
 
     public void ChangeToPlacingMode()
     {
       inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Placing;
-      stockCircle.SetActive(true);
-      lighterCircle.SetActive(false);
+      // stockCircle.SetActive(true);
+      // lighterCircle.SetActive(false);
     }
 
     public void ChangeToSeedingMode()

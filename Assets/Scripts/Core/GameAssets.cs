@@ -100,6 +100,11 @@ namespace Core
     private GameObject setMatureEffect;
     public static GameObject MatureEffect;
 
+    [SerializeField] private InventoryItem setLighterObject;
+    public static InventoryItem LighterObject;
+    [SerializeField] private InventoryItem setSeedObject;
+    public static InventoryItem SeedObject;
+
 
     private void Awake()
     {
@@ -133,6 +138,8 @@ namespace Core
 
       money = setMoney;
       MatureEffect = setMatureEffect;
+      LighterObject = setLighterObject;
+      SeedObject = setSeedObject;
     }
   }
 }

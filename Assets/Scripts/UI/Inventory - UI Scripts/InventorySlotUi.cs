@@ -22,6 +22,8 @@ namespace UI
     Inventories.Inventory inventory;
     private InventoryItem thisItem;
 
+
+
     // CACHE
     // ActionStore actionStore;
 
@@ -41,6 +43,8 @@ namespace UI
       this.index = index;
       thisItem = inventory.GetItemInSlot(index);
       iconInChild.SetItem(thisItem, inventory.GetNumberInSlot(index));
+
+
     }
 
     private void Start()
@@ -58,7 +62,10 @@ namespace UI
       else if (thisItem.category == CategoryEnum.Candle)
       {
         GameAssets.Player.ChangeToPlacingMode();
-        circle.gameObject.SetActive(true);
+      }
+      else if (thisItem.category == CategoryEnum.Tools)
+      {
+        GameAssets.Player.ChangeToLighterMode();
       }
     }
     // PUBLIC
@@ -96,28 +103,6 @@ namespace UI
       inventory.RemoveFromSlot(index, number);
     }
 
-    // private bool IsSelected()
-    // {
-    //   // print("not implement3ed");
-    //   return false;
-    //   // throw NotImplementedException;
-    //   // return index == actionStore.currentIndexSelected;
-    // }
-
-    // PRIVATE
-
-    // void UpdateIcon()
-    // {
-    //   iconInChild.SetItem(GetItem(), GetNumber());
-    //
-    //   //if is selected, highlight
-    //   // HighlightIfSelected();
-    // }
-
-    private void HighlightIfSelected()
-    {
-
-    }
 
     public void HideHighlight()
     {
