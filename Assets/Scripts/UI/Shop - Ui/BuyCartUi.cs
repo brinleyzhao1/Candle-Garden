@@ -90,10 +90,10 @@ namespace UI
     public void BtnBuy()
     {
       if (UpdateBuyCart()) return;
-      GameAssets.Inventory.AddToFirstEmptySlot(thisItem, currentTransactionAmount);
+      GameAssets.inventory.AddToFirstEmptySlot(thisItem, currentTransactionAmount);
       GameAssets.money.AddOrMinusMoney(-currentTransactionMoney);
       PlayMusicSFX();
-      
+
       if (UpdateBuyCart()) return;
     }
 
@@ -102,7 +102,7 @@ namespace UI
       if (UpdateSellCart()) return;
       //todo:update sell cart. if out of stock cannot sell anymore
 
-      GameAssets.Inventory.RemoveFromSlot(sellSlotIndex, currentTransactionAmount);
+      GameAssets.inventory.RemoveFromSlot(sellSlotIndex, currentTransactionAmount);
       GameAssets.money.AddOrMinusMoney(+currentTransactionMoney);
       PlayMusicSFX();
 

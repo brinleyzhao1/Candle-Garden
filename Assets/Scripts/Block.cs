@@ -35,14 +35,8 @@ public class Block : MonoBehaviour
         }
         else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Placing)
         {
-          if (GameAssets.Player.candleStock > 0)
-          {
-            PlaceMatureCandle();
-          }
-          else
-          {
-            //sfx
-          }
+            TryPlaceMatureCandle();
+
         }
       }
       else //not empty
@@ -52,8 +46,13 @@ public class Block : MonoBehaviour
     }
   }
 
-  private void PlaceMatureCandle()
+  private void TryPlaceMatureCandle()
   {
+    int candleSlotInInventory = GameAssets.inventory.HasItem(GameAssets.matureCandle);
+    if ( candleSlotInInventory == -1)
+    {
+      return;
+    }
 
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
 
@@ -61,8 +60,9 @@ public class Block : MonoBehaviour
     newCandle.transform.parent = transform;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
 
-    GameAssets.Player.candleStock -= 1;
-    GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
+    // GameAssets.Player.candleStock -= 1;
+    GameAssets.inventory.RemoveFromSlot(candleSlotInInventory,1 );
+    // GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
     isEmpty = false;
   }
 

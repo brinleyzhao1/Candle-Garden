@@ -6,7 +6,7 @@ namespace Core
   public enum CategoryEnum
   {
    Seed,
-   Produce,
+   Candle,
    Tools
   }
 }

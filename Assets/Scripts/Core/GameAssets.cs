@@ -1,3 +1,4 @@
+using Inventories;
 using Inventory;
 using TMPro;
 using UI;
@@ -63,10 +64,15 @@ namespace Core
 
     #region Inventories
 
-    [Header("Inventories")] [SerializeField]
-    private Inventories.Inventory setInventory;
+    [Header("Inventories")]
 
-    public static Inventories.Inventory Inventory;
+    [SerializeField] private Inventories.Inventory setInventory;
+    public static Inventories.Inventory inventory;
+
+ [SerializeField]
+    private InventoryItem setmatureCandle;
+
+    public static InventoryItem matureCandle;
 
     #endregion
 
@@ -115,7 +121,9 @@ namespace Core
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;
       // toolsTab = setToolsTab;
-      Inventory = setInventory;
+      inventory = setInventory;
+
+      matureCandle = setmatureCandle;
 
       buyCart = setBuyCart;
       sellCart = setSellCart;

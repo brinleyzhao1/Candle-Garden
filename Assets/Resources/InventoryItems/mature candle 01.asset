@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mature candle 01
   m_EditorClassIdentifier: 
   displayName: mature candle
-  type: 0
+  category: 1
   icon: {fileID: 21300000, guid: bbb70a9f4016d49949c6165b2b609d72, type: 3}
   description: 'This is Potato Seeds.
 

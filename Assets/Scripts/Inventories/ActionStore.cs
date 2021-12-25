@@ -137,7 +137,7 @@ namespace Inventory
     /// What is the maximum number of items allowed in this slot.
     ///
     /// This takes into account whether the slot already contains an item
-    /// and whether it is the same type. Will only accept multiple if the
+    /// and whether it is the same category. Will only accept multiple if the
     /// item is consumable.
     /// </summary>
     /// <returns>Will return int.MaxValue when there is not effective bound.</returns>

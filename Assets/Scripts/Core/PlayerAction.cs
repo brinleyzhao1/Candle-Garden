@@ -1,68 +1,60 @@
-using System;
-using Core;
+using UI;
 using UnityEngine;
 
-public class PlayerAction : MonoBehaviour
+namespace Core
 {
-  public ActionMode currentActionMode = ActionMode.Harvest;
-
-  public int seedStock;
-  public int candleStock; //grown candles harvested
-
-  //UI effect
-  [Header("UI")] [SerializeField] private GameObject lighterCircle;
-  [SerializeField] private GameObject stockCircle;
-  [SerializeField] private GameObject tutorialPanel;
-
-  public enum ActionMode
+  public class PlayerAction : MonoBehaviour
   {
-    Seeding,
-    Lighter,
-    Harvest,
-    Placing,
-    Neutral
-  }
+    public ActionMode currentActionMode = ActionMode.Harvest;
 
+    public int seedStock;
+    // public int candleStock; //grown candles harvested
 
-  private void Start()
-  {
-    GameAssets.CandleStockNumTxt.text = candleStock.ToString();
-    GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
-    tutorialPanel.SetActive(true);
-  }
+    //UI effect
+    [Header("UI")] [SerializeField] private GameObject lighterCircle;
+    [SerializeField] private GameObject stockCircle;
+    [SerializeField] private GameObject tutorialPanel;
 
-  public void ChangeToPlantingMode()
-  {
-    currentActionMode = ActionMode.Seeding;
-  }
+    private InventoryUi inventoryUi;
 
-  public void ChangeLighterMode()
-  {
-    if (currentActionMode == ActionMode.Lighter)
+    public enum ActionMode
     {
-      currentActionMode = ActionMode.Neutral;
-      lighterCircle.SetActive(false);
+      Seeding,
+      Lighter,
+      Harvest,
+      Placing,
+      Neutral
     }
-    else
+
+
+    private void Start()
     {
+      // GameAssets.CandleStockNumTxt.text = candleStock.ToString();
+      GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+      tutorialPanel.SetActive(true);
+      inventoryUi = FindObjectOfType<InventoryUi>();
+    }
+
+    public void ChangeToLighterMode()
+    {
+      inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Lighter;
       lighterCircle.SetActive(true);
       stockCircle.SetActive(false);
     }
-  }
 
-  public void ChangePlacingMode()
-  {
-    if (currentActionMode == ActionMode.Placing)
+    public void ChangeToPlacingMode()
     {
-      currentActionMode = ActionMode.Neutral;
-      stockCircle.SetActive(false);
-    }
-    else
-    {
+      inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Placing;
       stockCircle.SetActive(true);
       lighterCircle.SetActive(false);
+    }
+
+    public void ChangeToSeedingMode()
+    {
+      currentActionMode = ActionMode.Seeding;
+      inventoryUi.HideAllCircles();
     }
   }
 }

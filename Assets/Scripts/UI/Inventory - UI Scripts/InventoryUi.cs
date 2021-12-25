@@ -1,4 +1,4 @@
-
+using Core;
 using UnityEngine;
 
 
@@ -16,15 +16,26 @@ namespace UI
     // public CategoryEnum categoryEnum;
 
     // CACHE
-    private Inventories.Inventory _thisInventory;
+    private Inventories.Inventory thisInventory;
 
 
-    private void Awake()
+    private void Start()
     {
-      _thisInventory = FindObjectOfType<Inventories.Inventory>();
-      _thisInventory.InventoryUpdated += Redraw;
+      // thisInventory = GameAssets.inventory;//dont know why this grabs null
+      thisInventory = FindObjectOfType<Inventories.Inventory>();
+// print(thisInventory);
+
+      thisInventory.InventoryUpdated += Redraw;
 
       Redraw();
+    }
+
+    public void HideAllCircles()
+    {
+      foreach (Transform child in transform)
+      {
+        child.GetComponent<InventorySlotUi>().HideHighlight();
+      }
     }
 
 
@@ -32,21 +43,20 @@ namespace UI
 
     private void Redraw()
     {
+      // print(0);
       foreach (Transform child in transform)
       {
         Destroy(child.gameObject);
       }
 
-      for (int i = 0; i < _thisInventory.GetSize(); i++)
+
+      for (int i = 0; i < thisInventory.GetSize(); i++)
       {
         var itemUi = Instantiate(inventorySlotPrefab, transform);
-        itemUi.Setup(_thisInventory, i);
+        itemUi.Setup(thisInventory, i);
       }
     }
 
-
-
     #endregion
-
   }
 }

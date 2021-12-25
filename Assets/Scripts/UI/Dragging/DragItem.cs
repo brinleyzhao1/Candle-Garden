@@ -7,7 +7,7 @@ namespace UI
     /// <summary>
     /// Allows a UI element to be dragged and dropped from and to a container.
     ///
-    /// Create a subclass for the type you want to be draggable. Then place on
+    /// Create a subclass for the category you want to be draggable. Then place on
     /// the UI element you want to make draggable.
     ///
     /// During dragging, the item is reparented to the parent canvas.
@@ -17,7 +17,7 @@ namespace UI
     /// `IDragDestination and `IDragSource` to update the interface after a drag
     /// has occurred.
     /// </summary>
-    /// <typeparam name="T">The type that represents the item being dragged.</typeparam>
+    /// <typeparam name="T">The category that represents the item being dragged.</typeparam>
     public class DragItem<T> : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
         where T : class
     {

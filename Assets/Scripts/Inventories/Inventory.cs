@@ -28,19 +28,16 @@ namespace Inventories
       public int amount;
     }
 
-    private void Awake()
-    {
-      _slots = new InventorySlot[inventorySize];
-    }
-
-
     /// <summary>
     /// Broadcasts when the items in the slots are added/removed.
     /// </summary>
     public event Action InventoryUpdated;
 
-
-
+    private void Awake()
+    {
+      _slots = new InventorySlot[inventorySize];
+      // InventoryUpdated?.Invoke();
+    }
 
 
     #region Functions Related to Inventory
@@ -95,21 +92,21 @@ namespace Inventories
     /// <summary>
     /// Is there an instance of the item in the inventory?
     /// </summary>
-    public bool HasItem(InventoryItem item)
+    public int HasItem(InventoryItem item)
     {
       for (int i = 0; i < _slots.Length; i++)
       {
         if (object.ReferenceEquals(_slots[i].item, item))
         {
-          return true;
+          return i;
         }
       }
 
-      return false;
+      return -1;
     }
 
     /// <summary>
-    /// Return the item type in the given slot.
+    /// Return the item category in the given slot.
     /// </summary>
     public InventoryItem GetItemInSlot(int slot)
     {
@@ -145,11 +142,11 @@ namespace Inventories
 
     /// <summary>
     /// Will add an item to the given slot if possible. If there is already
-    /// a stack of this type, it will add to the existing stack. Otherwise,
+    /// a stack of this category, it will add to the existing stack. Otherwise,
     /// it will be added to the first empty slot.
     /// </summary>
     /// <param name="slot">The slot to attempt to add to.</param>
-    /// <param name="item">The item type to add.</param>
+    /// <param name="item">The item category to add.</param>
     /// <param name="number">The number of items to add.</param>
     /// <returns>True if the item was added anywhere in the inventory.</returns>
     public bool AddItemToSlot(int slot, InventoryItem item, int number)
@@ -212,7 +209,7 @@ namespace Inventories
     }
 
     /// <summary>
-    /// Find an existing stack of this item type.
+    /// Find an existing stack of this item category.
     /// </summary>
     /// <returns>-1 if no stack exists or if the item is not stackable.</returns>
     private int FindStack(InventoryItem item)
@@ -234,6 +231,5 @@ namespace Inventories
     }
 
     #endregion
-
   }
 }

@@ -64,8 +64,10 @@ public class UnlitCandle : MonoBehaviour
 
   private void HarvestCandle()
   {
-    GameAssets.Player.candleStock += 1;
-    GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
+    // GameAssets.Player.candleStock += 1;
+    GameAssets.inventory.AddToFirstEmptySlot(GameAssets.matureCandle, 1);
+    //todo: add to first candle slot if already has candle
+    // GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
     Destroy(gameObject);
   }
 

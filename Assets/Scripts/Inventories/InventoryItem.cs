@@ -18,7 +18,7 @@ namespace Inventories
     [Tooltip("Item name to be displayed in UI.")] [SerializeField]
     string displayName = null;
 
-    public CategoryEnum type = CategoryEnum.Seed;
+    public CategoryEnum category = CategoryEnum.Seed;
 
     [Tooltip("The UI icon to represent this item in the inventory.")] [SerializeField]
     Sprite icon = null;
@@ -26,7 +26,7 @@ namespace Inventories
     [Tooltip("description of the item. one to two sentences")] [SerializeField] [TextArea]
     string description;
 
-    [Tooltip("If true, multiple items of this type can be stacked in the same inventory slot.")] [SerializeField]
+    [Tooltip("If true, multiple items of this category can be stacked in the same inventory slot.")] [SerializeField]
     bool stackable = false;
 
     [Tooltip("price to buy from shop.")] [SerializeField]

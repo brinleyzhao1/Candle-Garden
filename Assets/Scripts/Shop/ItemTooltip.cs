@@ -55,15 +55,15 @@ namespace Shop
 
     private void AddOneToCorrespondingInventory()
     {
-      // if (thisItem.type == CategoryEnum.Seed)
+      // if (thisItem.category == CategoryEnum.Seed)
       // {
       //   GameAssets.seedsInventory.AddToFirstEmptySlot(thisItem, 1);
       // }
-      // else if (thisItem.type == CategoryEnum.Produce)
+      // else if (thisItem.category == CategoryEnum.Produce)
       // {
       //   GameAssets.produceInventory.AddToFirstEmptySlot(thisItem, 1);
       // }
-      // else if (thisItem.type == CategoryEnum.Tools)
+      // else if (thisItem.category == CategoryEnum.Tools)
       // {
       //   GameAssets.toolsInventory.AddToFirstEmptySlot(thisItem, 1);
       // }
@@ -71,15 +71,15 @@ namespace Shop
 
     private void MinusOneFromCorrespondingInventory()
     {
-      // if (thisItem.type == CategoryEnum.Seed)
+      // if (thisItem.category == CategoryEnum.Seed)
       // {
       //   GameAssets.seedsInventory.RemoveFromSlot(thisIndex, 1);
       // }
-      // else if (thisItem.type == CategoryEnum.Produce)
+      // else if (thisItem.category == CategoryEnum.Produce)
       // {
       //   GameAssets.produceInventory.RemoveFromSlot(thisIndex, 1);
       // }
-      // else if (thisItem.type == CategoryEnum.Tools)
+      // else if (thisItem.category == CategoryEnum.Tools)
       // {
       //   GameAssets.toolsInventory.RemoveFromSlot(thisIndex, 1);
       // }

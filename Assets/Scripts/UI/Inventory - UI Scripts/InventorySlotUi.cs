@@ -15,10 +15,12 @@ namespace UI
   {
     // CONFIG DATA
     [SerializeField] InventoryItemIcon iconInChild = null;
-    [SerializeField] int index = 0;
-    [SerializeField] private Color selectedColor;
+    [SerializeField] private GameObject circle;
+    int index = 0;
+    // [SerializeField] private Color selectedColor;
 
     Inventories.Inventory inventory;
+    private InventoryItem thisItem;
 
     // CACHE
     // ActionStore actionStore;
@@ -37,7 +39,8 @@ namespace UI
     {
       this.inventory = inventory;
       this.index = index;
-      iconInChild.SetItem(inventory.GetItemInSlot(index), inventory.GetNumberInSlot(index));
+      thisItem = inventory.GetItemInSlot(index);
+      iconInChild.SetItem(thisItem, inventory.GetNumberInSlot(index));
     }
 
     private void Start()
@@ -45,12 +48,25 @@ namespace UI
       // actionStore.StoreUpdated += UpdateIcon;
     }
 
+    public void BtnSelect()
+    {
+      if (thisItem.category == CategoryEnum.Seed)
+      {
+        GameAssets.Player.ChangeToSeedingMode();
+        circle.gameObject.SetActive(true);
+      }
+      else if (thisItem.category == CategoryEnum.Candle)
+      {
+        GameAssets.Player.ChangeToPlacingMode();
+        circle.gameObject.SetActive(true);
+      }
+    }
     // PUBLIC
 
     public void AddItems(InventoryItem item, int number)
     {
       // print("add action item");
-      inventory.AddItemToSlot(index,item,number);
+      inventory.AddItemToSlot(index, item, number);
     }
 
     public InventoryItem GetItem()
@@ -98,19 +114,14 @@ namespace UI
     //   // HighlightIfSelected();
     // }
 
-    // private void HighlightIfSelected()
-    // {
-    //   var slotImage = GetComponent<Image>();
-    //
-    //   if (IsSelected())
-    //   {
-    //     // slotImage.color = Color.green;
-    //     slotImage.color = selectedColor;
-    //   }
-    //   else
-    //   {
-    //     slotImage.color = Color.white;
-    //   }
-    // }
+    private void HighlightIfSelected()
+    {
+
+    }
+
+    public void HideHighlight()
+    {
+      circle.gameObject.SetActive(false);
+    }
   }
 }
