@@ -10,9 +10,11 @@ public class Health : MonoBehaviour
   [SerializeField] private int totalHealth = 100;
   private int currentHealth;
   [SerializeField] private int damagePerSec = 5;
+  [SerializeField] private int addHealthPerSec = 1;
   [SerializeField] private int intervalSecondsDamage = 1;
 
   private bool damageCoroutineRunning = false;
+  private bool addHealthCoroutineRunning = false;
   private Image healthBar;
 
   private void Start()
@@ -33,10 +35,16 @@ public class Health : MonoBehaviour
         // print("player safe");
         // StopCoroutine(DamageIfUnsafe());
         damageCoroutineRunning = false;
+
+        if (addHealthCoroutineRunning == false)
+        {
+          StartCoroutine(AddHealthIfInLight());
+        }
       }
       else //in danger
       {
-        // print("player in danger");
+        addHealthCoroutineRunning = false;
+
         if (damageCoroutineRunning == false)
         {
           StartCoroutine(DamageIfUnsafe());
@@ -81,6 +89,27 @@ public class Health : MonoBehaviour
       {
         Death();
         damageCoroutineRunning = false;
+        yield break;
+      }
+
+      yield return new WaitForSeconds(intervalSecondsDamage);
+    }
+  }
+
+  private IEnumerator AddHealthIfInLight()
+  {
+    addHealthCoroutineRunning = true;
+    while (addHealthCoroutineRunning == true)
+    {
+      currentHealth += addHealthPerSec;
+
+      // GameAssets.SFX.PlayOneShot(GameAssets.LoseHealthSFX);
+      UpdateUi();
+
+      if (currentHealth >= totalHealth)
+      {
+        // Death();
+        addHealthCoroutineRunning = false;
         yield break;
       }
 
