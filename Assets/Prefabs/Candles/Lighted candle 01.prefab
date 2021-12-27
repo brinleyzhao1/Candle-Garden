@@ -4813,7 +4813,7 @@ GameObject:
   - component: {fileID: 4467258153015937599}
   - component: {fileID: -7169827756512637145}
   m_Layer: 0
-  m_Name: grown up candle 01
+  m_Name: Lighted candle 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4898,6 +4898,7 @@ MonoBehaviour:
   growTime: 30
   state: 0
   LighterSound: {fileID: 0}
+  parentBlock: {fileID: 0}
 --- !u!114 &-7169827756512637145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4911,6 +4912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 30
+  parentBlock: {fileID: 0}
 --- !u!1 &5783929768577011860
 GameObject:
   m_ObjectHideFlags: 0
@@ -9752,7 +9754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8372415116526520257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.00054, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0081, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8894080066871680462}
@@ -9771,8 +9773,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.82277876, b: 0.41037738, a: 1}
-  m_Intensity: 1.44
-  m_Range: 5
+  m_Intensity: 2.5
+  m_Range: 4.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
