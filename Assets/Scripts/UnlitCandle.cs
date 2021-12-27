@@ -10,6 +10,8 @@ public class UnlitCandle : MonoBehaviour
   public CandleState state;
   [SerializeField] private AudioClip LighterSound;
 
+  public Block parentBlock;
+
   public enum CandleState
   {
     GrowingUp,
@@ -59,6 +61,7 @@ public class UnlitCandle : MonoBehaviour
 
     var newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform.parent;
+    newCandle.GetComponent<LightedCandle>().parentBlock = parentBlock;
     Destroy(gameObject);
   }
 

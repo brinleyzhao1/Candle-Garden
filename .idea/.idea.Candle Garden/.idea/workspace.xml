@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Candle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GrownUpCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BabyCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/PauseMenu.cs" />
@@ -94,16 +94,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CategoryEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +162,7 @@
       <workItem from="1640092151472" duration="3617000" />
       <workItem from="1640109187828" duration="1364000" />
       <workItem from="1640179884870" duration="19342000" />
-      <workItem from="1640611831849" duration="337000" />
+      <workItem from="1640611831849" duration="903000" />
     </task>
     <servers />
   </component>
@@ -194,9 +195,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1640024953759" />
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640611998225">
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1640612433927">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640611998225" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1640612433927" />
   </component>
 </project>

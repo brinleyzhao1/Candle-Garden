@@ -6,6 +6,8 @@ using UnityEngine;
 public class LightedCandle : MonoBehaviour
 {
   public int lifeTime = 30;
+  public Block parentBlock;
+
 
 
 
@@ -35,6 +37,9 @@ public class LightedCandle : MonoBehaviour
     // var vfx = Instantiate(goalParticle, transform.position, Quaternion.identity);
     // vfx.Play();
     // Destroy(vfx.gameObject, vfx.main.duration);
+
+
+    parentBlock.isEmpty = true;
 
     Destroy(gameObject);
   }
