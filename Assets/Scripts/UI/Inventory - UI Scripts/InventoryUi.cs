@@ -23,7 +23,6 @@ namespace UI
     {
       // thisInventory = GameAssets.inventory;//dont know why this grabs null
       thisInventory = FindObjectOfType<Inventories.Inventory>();
-// print(thisInventory);
 
       thisInventory.InventoryUpdated += Redraw;
 
