@@ -54,21 +54,29 @@ namespace UI
 
     public void BtnSelect()
     {
+
+
       if (thisItem.category == CategoryEnum.Seed)
       {
         GameAssets.Player.ChangeToSeedingMode();//changing mode hides all circles
-        circle.gameObject.SetActive(true);
+        OpenCircle();
       }
       else if (thisItem.category == CategoryEnum.Candle)
       {
         GameAssets.Player.ChangeToPlacingMode();
-        circle.gameObject.SetActive(true);
+        OpenCircle();
       }
       else if (thisItem.category == CategoryEnum.Tools)
       {
         GameAssets.Player.ChangeToLighterMode();
-        circle.gameObject.SetActive(true);
+        OpenCircle();
       }
+    }
+
+    private void OpenCircle()
+    {
+      circle.gameObject.SetActive(true);
+      GameAssets.SFX.PlayOneShot(GameAssets.ActionSlotSFX);
     }
     // PUBLIC
 

@@ -25,7 +25,7 @@ public class Intro : MonoBehaviour
 
   IEnumerator NextScene()
   {
-    yield return new WaitForSeconds(6);
+    yield return new WaitForSeconds(5);
     SceneManager.LoadScene(2);
   }
 

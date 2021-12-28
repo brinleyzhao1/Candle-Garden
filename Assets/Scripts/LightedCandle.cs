@@ -21,7 +21,7 @@ public class LightedCandle : MonoBehaviour
   private IEnumerator BurnDown()
   {
     float timeLeft = lifeTime;
-    while (timeLeft > 0)
+    while (timeLeft > 0.3f)
     {
       transform.localScale = new Vector3( 9, 15 * (timeLeft/lifeTime),9);
       yield return new WaitForSeconds(0.2f);

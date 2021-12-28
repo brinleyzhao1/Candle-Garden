@@ -1936,6 +1936,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 267878099}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &137611119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3728,6 +3740,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fddd556dbb44a8399b6fd928867923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &267878097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267878098}
+  - component: {fileID: 267878099}
+  m_Layer: 0
+  m_Name: ClickSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267878098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267878097}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 614170122}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &267878099
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267878097}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 522dd915eba214459ac6d49a056a2f1d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &268443139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4943346052668816412, guid: 1eae5fb4e7184466cafaac17b07d3660,
@@ -6537,6 +6676,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 267878099}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &429471752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7542,6 +7693,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 1
+--- !u!114 &544411988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 864625374, guid: 1eae5fb4e7184466cafaac17b07d3660,
+    type: 3}
+  m_PrefabInstance: {fileID: 544411983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544411985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0390d238788042e19772f9045ea9658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &571375630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8709,6 +8872,7 @@ Transform:
   - {fileID: 603298585}
   - {fileID: 1567894169}
   - {fileID: 488490682}
+  - {fileID: 267878098}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13834,6 +13998,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fddd556dbb44a8399b6fd928867923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &909102810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 864625374, guid: 1eae5fb4e7184466cafaac17b07d3660,
+    type: 3}
+  m_PrefabInstance: {fileID: 909102805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909102807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0390d238788042e19772f9045ea9658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910923032
 GameObject:
   m_ObjectHideFlags: 0
@@ -14578,10 +14754,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7169827756512637145, guid: 8f465b6f929a3474f86bcfd2be1789f3,
+        type: 3}
+      propertyPath: lifeTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: -7169827756512637145, guid: 8f465b6f929a3474f86bcfd2be1789f3,
+        type: 3}
+      propertyPath: parentBlock
+      value: 
+      objectReference: {fileID: 544411988}
     - target: {fileID: 1717747304395741098, guid: 8f465b6f929a3474f86bcfd2be1789f3,
         type: 3}
       propertyPath: m_Name
-      value: grown up candle 01
+      value: lit candle 01
       objectReference: {fileID: 0}
     - target: {fileID: 1717747304395741098, guid: 8f465b6f929a3474f86bcfd2be1789f3,
         type: 3}
@@ -21292,21 +21478,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop Grid Ui
       objectReference: {fileID: 0}
-    - target: {fileID: 4674370666642919020, guid: eefbc12154e104c3b843f2bc384ff1da,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674370666642919020, guid: eefbc12154e104c3b843f2bc384ff1da,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674370666642919020, guid: eefbc12154e104c3b843f2bc384ff1da,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eefbc12154e104c3b843f2bc384ff1da, type: 3}
 --- !u!224 &1366114493 stripped
@@ -22970,6 +23141,7 @@ MonoBehaviour:
   setSeedingSFX: {fileID: 8300000, guid: 9e45e448b44e14dbda1384f2e058a118, type: 3}
   setPlacingSFX: {fileID: 8300000, guid: 9d683f5416763411aa3f30e791c0f08d, type: 3}
   setMoneySFX: {fileID: 8300000, guid: 0b32c552f5ad64974ae515c7287ce5dd, type: 3}
+  setActionSlotSFX: {fileID: 8300000, guid: 78829eced485a4fa0b09ff736e57762e, type: 3}
   setBabyCandle01: {fileID: 5717092747114881636, guid: b0d2cfb0fc41b45de9583c62284692b9,
     type: 3}
   setGrownCandle01: {fileID: 1995547902088626503, guid: 736ce9adfc861483fb2b99dd460126d0,
@@ -29423,6 +29595,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 267878099}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2035601374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30800,6 +30984,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 267878099}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2132326964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30973,6 +31169,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7169827756512637145, guid: 8f465b6f929a3474f86bcfd2be1789f3,
+        type: 3}
+      propertyPath: parentBlock
+      value: 
+      objectReference: {fileID: 909102810}
     - target: {fileID: 1717747304395741098, guid: 8f465b6f929a3474f86bcfd2be1789f3,
         type: 3}
       propertyPath: m_Name
@@ -31031,6 +31232,11 @@ PrefabInstance:
     - target: {fileID: 1719778199482437106, guid: 8f465b6f929a3474f86bcfd2be1789f3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467258153015937599, guid: 8f465b6f929a3474f86bcfd2be1789f3,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31395,6 +31601,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5873859072077931609, guid: 736ce9adfc861483fb2b99dd460126d0,
+        type: 3}
+      propertyPath: parentBlock
+      value: 
+      objectReference: {fileID: 544411988}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 736ce9adfc861483fb2b99dd460126d0, type: 3}
 --- !u!224 &8805085004182205008 stripped

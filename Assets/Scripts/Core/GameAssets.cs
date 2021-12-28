@@ -31,6 +31,8 @@ namespace Core
     public static AudioClip PlacingSFX;
     [SerializeField] private AudioClip setMoneySFX;
     public static AudioClip MoneySFX;
+    [SerializeField] private AudioClip setActionSlotSFX;
+    public static AudioClip ActionSlotSFX;
 
     #endregion
 
@@ -124,6 +126,7 @@ namespace Core
       SeedingSFX = setSeedingSFX;
       PlacingSFX = setPlacingSFX;
       MoneySFX = setMoneySFX;
+      ActionSlotSFX = setActionSlotSFX;
 
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;

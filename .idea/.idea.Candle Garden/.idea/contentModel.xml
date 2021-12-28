@@ -40,7 +40,6 @@
             </e>
           </e>
         </e>
-        <e p="Intro.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
           <e p="Core" t="Include">
@@ -54,6 +53,7 @@
           </e>
           <e p="CubeEditor.cs" t="Include" />
           <e p="EndGame.cs" t="Include" />
+          <e p="Intro.cs" t="Include" />
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />
             <e p="ActionStore.cs" t="Include" />
