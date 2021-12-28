@@ -94,6 +94,7 @@ public class Block : MonoBehaviour
 
     var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform;
+    newCandle.GetComponent<UnlitCandle>().parentBlock = this;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
     isEmpty = false;
 

@@ -31,6 +31,7 @@ public class UnlitCandle : MonoBehaviour
 
       if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Lighter)
       {
+        
         LightCandle();
       }
       else
