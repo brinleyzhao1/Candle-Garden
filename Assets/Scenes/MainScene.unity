@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -42}
+  m_AnchoredPosition: {x: 0, y: -51}
   m_SizeDelta: {x: 240, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79038928
@@ -4129,11 +4129,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879923962}
     m_Modifications:
-    - target: {fileID: 3725815712816035413, guid: 1eae5fb4e7184466cafaac17b07d3660,
-        type: 3}
-      propertyPath: m_Text
-      value: 1,0
-      objectReference: {fileID: 0}
     - target: {fileID: 4943346052668816412, guid: 1eae5fb4e7184466cafaac17b07d3660,
         type: 3}
       propertyPath: m_Name
@@ -11000,7 +10995,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.27154702, g: 0.5277695, b: 0.709, a: 1}
+  m_Color: {r: 0.34130386, g: 0.5067845, b: 0.624, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -11746,7 +11741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -42, y: 47}
+  m_AnchoredPosition: {x: -42, y: 40}
   m_SizeDelta: {x: 232.35321, y: 142}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &736509516
@@ -14956,13 +14951,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.11899917, y: -0.23659703, z: 0.30743238, w: 0.9139729}
-  m_LocalPosition: {x: 6.160011, y: 10.450014, z: -10.980033}
+  m_LocalRotation: {x: 0.085560866, y: -0.24637632, z: 0.29670218, w: 0.91866523}
+  m_LocalPosition: {x: 6.63, y: 8.99, z: -10.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 169816637}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.285, y: -22.682, z: 32.866}
+  m_LocalEulerAnglesHint: {x: 17.662, y: -24.947, z: 31.861}
 --- !u!4 &973136675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6a837b5aae6814fad9ceee58391e93a0,
@@ -23276,8 +23271,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7793af8ef4d304c7183a5c0f26fd93d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.8
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0

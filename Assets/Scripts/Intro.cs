@@ -11,7 +11,7 @@ public class Intro : MonoBehaviour
 
   private void Update()
   {
-    if (Input.anyKey)
+    if (Input.GetMouseButtonUp(0))
     {
      texts[currentIndex].SetActive(true);
      currentIndex += 1;
@@ -25,7 +25,7 @@ public class Intro : MonoBehaviour
 
   IEnumerator NextScene()
   {
-    yield return new WaitForSeconds(5);
+    yield return new WaitForSeconds(1.5f);
     SceneManager.LoadScene(2);
   }
 
