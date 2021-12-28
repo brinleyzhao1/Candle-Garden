@@ -78,6 +78,8 @@ public class Health : MonoBehaviour
   private IEnumerator DamageIfUnsafe()
   {
     damageCoroutineRunning = true;
+    yield return new WaitForSeconds(3);
+
     while (damageCoroutineRunning == true)
     {
       currentHealth -= damagePerSec;

@@ -4810,7 +4810,6 @@ GameObject:
   - component: {fileID: 1719778199482437106}
   - component: {fileID: 1703507129494204602}
   - component: {fileID: 1693585156790373812}
-  - component: {fileID: 4467258153015937599}
   - component: {fileID: -7169827756512637145}
   m_Layer: 0
   m_Name: Lighted candle 01
@@ -4883,22 +4882,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4467258153015937599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717747304395741098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b497f11b7b7144bacb9f3cad2ca096ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  growTime: 30
-  state: 0
-  LighterSound: {fileID: 0}
-  parentBlock: {fileID: 0}
 --- !u!114 &-7169827756512637145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9772,8 +9755,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.82277876, b: 0.41037738, a: 1}
-  m_Intensity: 2.5
+  m_Color: {r: 1, g: 0.72130007, b: 0.07099998, a: 1}
+  m_Intensity: 7
   m_Range: 4.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082

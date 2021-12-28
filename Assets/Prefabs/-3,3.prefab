@@ -162,7 +162,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766081717841508711}
-  m_Text: 0,2
+  m_Text: -1,-1
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7825023031609569573}
   - component: {fileID: -4999026021569935789}
-  - component: {fileID: 864625374}
+  - component: {fileID: 882235098}
   m_Layer: 0
   m_Name: -3,3
   m_TagString: Untagged
@@ -223,7 +223,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1028583, y: 2.4313097, z: 1.9052329}
   m_Center: {x: 0.065230146, y: 0.7156551, z: 0.027273014}
---- !u!114 &864625374
+--- !u!114 &882235098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,4 +235,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0390d238788042e19772f9045ea9658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlaceable: 1
+  isEmpty: 1
