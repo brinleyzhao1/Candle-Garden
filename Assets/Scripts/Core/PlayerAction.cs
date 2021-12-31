@@ -29,7 +29,6 @@ namespace Core
 
     private void Start()
     {
-      // GameAssets.CandleStockNumTxt.text = candleStock.ToString();
       GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
       tutorialPanel.SetActive(true);
       inventoryUi = FindObjectOfType<InventoryUi>();
@@ -39,8 +38,14 @@ namespace Core
     {
       inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Lighter;
-      // lighterCircle.SetActive(true);
-      // stockCircle.SetActive(false);
+
+    }
+
+    public void ChangeToShovelMode()
+    {
+      inventoryUi.HideAllCircles();
+      currentActionMode = ActionMode.Harvest;
+
     }
 
     public void ChangeToPlacingMode()

@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I need some light!!
+  m_text: I hate darkness! I need some light!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44cc1bbe41af745a2a5016c6e1cd36f3, type: 2}
   m_sharedMaterial: {fileID: -7665465310136023421, guid: 44cc1bbe41af745a2a5016c6e1cd36f3,

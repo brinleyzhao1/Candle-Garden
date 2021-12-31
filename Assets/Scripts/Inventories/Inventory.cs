@@ -41,6 +41,7 @@ namespace Inventories
     private void Start()
     {
       AddToFirstEmptySlot(GameAssets.LighterObject, 1);
+      AddToFirstEmptySlot(GameAssets.ShovelObject, 1);
       AddToFirstEmptySlot(GameAssets.SeedObject, 2);
     }
 

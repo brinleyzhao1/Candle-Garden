@@ -28,16 +28,17 @@ public class UnlitCandle : MonoBehaviour
         return; //too far
       }
 
-
       if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Lighter)
       {
-        
+
         LightCandle();
       }
-      else
+      else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Harvest)
       {
+
         HarvestCandle();
       }
+
     }
   }
 
@@ -68,10 +69,10 @@ public class UnlitCandle : MonoBehaviour
 
   private void HarvestCandle()
   {
+    GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
     // GameAssets.Player.candleStock += 1;
     GameAssets.inventory.AddToFirstEmptySlot(GameAssets.matureCandle, 1);
-    //todo: add to first candle slot if already has candle
-    // GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
+
     Destroy(gameObject);
   }
 

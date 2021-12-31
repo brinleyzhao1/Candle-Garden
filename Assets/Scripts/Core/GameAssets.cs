@@ -104,6 +104,10 @@ namespace Core
 
     [SerializeField] private InventoryItem setLighterObject;
     public static InventoryItem LighterObject;
+
+    [SerializeField] private InventoryItem setShovelObject;
+    public static InventoryItem ShovelObject;
+
     [SerializeField] private InventoryItem setSeedObject;
     public static InventoryItem SeedObject;
 
@@ -143,6 +147,7 @@ namespace Core
       MatureEffect = setMatureEffect;
       LighterObject = setLighterObject;
       SeedObject = setSeedObject;
+      ShovelObject = setShovelObject;
     }
   }
 }

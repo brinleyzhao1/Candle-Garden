@@ -23063,6 +23063,7 @@ MonoBehaviour:
   setMatureEffect: {fileID: 4429991862075384056, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
     type: 3}
   setLighterObject: {fileID: 11400000, guid: 8baea83bceb1e4ae0ac5c79a650c9b15, type: 2}
+  setShovelObject: {fileID: 11400000, guid: aa7d0659aaf95409a8201adac3e353f8, type: 2}
   setSeedObject: {fileID: 11400000, guid: f1943d3f0e4de412585cf6cc1b4ca0eb, type: 2}
 --- !u!1 &1549321425 stripped
 GameObject:

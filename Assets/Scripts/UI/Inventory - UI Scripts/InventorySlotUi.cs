@@ -66,9 +66,14 @@ namespace UI
         GameAssets.Player.ChangeToPlacingMode();
         OpenCircle();
       }
-      else if (thisItem.category == CategoryEnum.Tools)
+      else if (thisItem.category == CategoryEnum.Lighter)
       {
         GameAssets.Player.ChangeToLighterMode();
+        OpenCircle();
+      }
+      else if (thisItem.category == CategoryEnum.Shovel)
+      {
+        GameAssets.Player.ChangeToShovelMode();
         OpenCircle();
       }
     }
