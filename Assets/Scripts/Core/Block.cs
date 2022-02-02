@@ -47,7 +47,7 @@ public class Block : MonoBehaviour
   }
   private void TryPlantCandleSeed()
   {
-    if (TryRemoveOne(GameAssets.SeedObject)) return;
+    if (TryRemoveOneFromInventory(GameAssets.SeedObject)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
 
@@ -62,7 +62,7 @@ public class Block : MonoBehaviour
   }
   private void TryPlaceMatureCandle()
   {
-    if (TryRemoveOne(GameAssets.matureCandle)) return;
+    if (TryRemoveOneFromInventory(GameAssets.matureCandle)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
 
