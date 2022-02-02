@@ -114,6 +114,7 @@ MonoBehaviour:
   growTime: 30
   state: 1
   LighterSound: {fileID: 8300000, guid: e6c1e56aab12d4cb9aa5a17ce84379fb, type: 3}
+  parentBlock: {fileID: 0}
 --- !u!136 &3029784387857164832
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -124,7 +125,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.069183655
+  m_Radius: 0.85
   m_Height: 0.10197723
   m_Direction: 1
   m_Center: {x: 0, y: 0.050988615, z: 0.002273255}
