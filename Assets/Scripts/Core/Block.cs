@@ -45,7 +45,21 @@ public class Block : MonoBehaviour
       }
     }
   }
+  private void TryPlantCandleSeed()
+  {
+    if (TryRemoveOne(GameAssets.SeedObject)) return;
 
+    GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
+
+    var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
+    newCandle.transform.parent = transform;
+    newCandle.GetComponent<UnlitCandle>().parentBlock = this;
+    newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
+    isEmpty = false;
+
+
+    // GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+  }
   private void TryPlaceMatureCandle()
   {
     if (TryRemoveOne(GameAssets.matureCandle)) return;
@@ -63,12 +77,12 @@ public class Block : MonoBehaviour
     isEmpty = false;
   }
 
-  private static bool TryRemoveOne(InventoryItem item)
+  private static bool TryRemoveOneFromInventory(InventoryItem item)
   {
     int slotInInventory = GameAssets.inventory.HasItem(item);
     if (slotInInventory == -1)
     {
-      return true;
+      return true; //couldn't
     }
 
     GameAssets.inventory.RemoveFromSlot(slotInInventory, 1);
@@ -86,21 +100,7 @@ public class Block : MonoBehaviour
     return false;
   }
 
-  private void TryPlantCandleSeed()
-  {
-    if (TryRemoveOne(GameAssets.SeedObject)) return;
 
-    GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
-
-    var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
-    newCandle.transform.parent = transform;
-    newCandle.GetComponent<UnlitCandle>().parentBlock = this;
-    newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
-    isEmpty = false;
-
-
-    // GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
-  }
 
 
   public int GetGridSize()

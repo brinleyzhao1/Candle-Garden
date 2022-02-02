@@ -72,6 +72,7 @@ public class UnlitCandle : MonoBehaviour
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
     // GameAssets.Player.candleStock += 1;
     GameAssets.inventory.AddToFirstEmptySlot(GameAssets.matureCandle, 1);
+    parentBlock.isEmpty = true;
 
     Destroy(gameObject);
   }
