@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Shovel
   category: 3
-  icon: {fileID: 21300000, guid: cd25b504b35904c93963ef34a4245f39, type: 3}
+  icon: {fileID: 21300000, guid: fea649c5887304d8198836cebfe351cd, type: 3}
   description: This is Cucumber Seeds
   stackable: 0
   buyInPrice: 20
