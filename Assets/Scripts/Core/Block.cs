@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Core;
 using Inventories;
+using UI;
 using UnityEngine;
 
 public class Block : MonoBehaviour
@@ -49,6 +50,9 @@ public class Block : MonoBehaviour
   {
     if (TryRemoveOneFromInventory(GameAssets.SeedObject)) return;
 
+    // InventoryUi inventoryUi = FindObjectOfType<InventoryUi>();
+    // inventoryUi.MaintainPreviousCircle();
+
     GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
 
     var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
@@ -58,7 +62,6 @@ public class Block : MonoBehaviour
     isEmpty = false;
 
 
-    // GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
   }
   private void TryPlaceMatureCandle()
   {
@@ -86,6 +89,8 @@ public class Block : MonoBehaviour
     }
 
     GameAssets.inventory.RemoveFromSlot(slotInInventory, 1);
+
+
     return false;
   }
 

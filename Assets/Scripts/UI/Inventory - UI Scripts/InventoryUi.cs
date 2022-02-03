@@ -1,3 +1,4 @@
+using System;
 using Core;
 using UnityEngine;
 
@@ -15,6 +16,8 @@ namespace UI
     [SerializeField] protected InventorySlotUi inventorySlotPrefab = null;
     // public CategoryEnum categoryEnum;
 
+    public int slotCircled = -1;
+
     // CACHE
     private Inventories.Inventory thisInventory;
 
@@ -29,11 +32,17 @@ namespace UI
       Redraw();
     }
 
+    private void Update()
+    {
+      MaintainPreviousCircle();//todo this is a brute force way
+    }
+
     public void HideAllCircles()
     {
+      // print("hide all");
       foreach (Transform child in transform)
       {
-        child.GetComponent<InventorySlotUi>().HideHighlight();
+        child.GetComponent<InventorySlotUi>().HideCircle();
       }
     }
 
@@ -51,8 +60,27 @@ namespace UI
 
       for (int i = 0; i < thisInventory.GetSize(); i++)
       {
-        var itemUi = Instantiate(inventorySlotPrefab, transform);
-        itemUi.Setup(thisInventory, i);
+        var itemSlotUi = Instantiate(inventorySlotPrefab, transform);
+        itemSlotUi.Setup(thisInventory, i);
+      }
+
+
+      MaintainPreviousCircle();
+    }
+
+    public void MaintainPreviousCircle()
+    {
+      if (slotCircled != -1)
+      {
+        // print("try to reopen");
+        var slotShouldBeCircled = transform.GetChild(slotCircled);
+
+        // GameObject circle = slotShouldBeCircled.GetComponent<InventorySlotUi>().circle.gameObject;
+        GameObject circle = slotShouldBeCircled.GetChild(1).gameObject;
+        // print(circle);
+        // print(circle.activeSelf);
+        circle.SetActive(true);
+        // print("circle opened");
       }
     }
 

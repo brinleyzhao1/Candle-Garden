@@ -11,11 +11,11 @@ namespace Core
     // public int candleStock; //grown candles harvested
 
     //UI effect
-    [Header("UI")] [SerializeField] private GameObject lighterCircle;
-    [SerializeField] private GameObject stockCircle;
+    // [Header("UI")] [SerializeField] private GameObject lighterCircle;
+    // [SerializeField] private GameObject stockCircle;
     [SerializeField] private GameObject tutorialPanel;
 
-    private InventoryUi inventoryUi;
+    // private InventoryUi inventoryUi;
 
     public enum ActionMode
     {
@@ -29,28 +29,28 @@ namespace Core
 
     private void Start()
     {
-      GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
+      // GameAssets.SeedStockNumTxt.text = GameAssets.Player.seedStock.ToString();
       tutorialPanel.SetActive(true);
-      inventoryUi = FindObjectOfType<InventoryUi>();
     }
 
     public void ChangeToLighterMode()
     {
-      inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Lighter;
 
     }
 
     public void ChangeToShovelMode()
     {
-      inventoryUi.HideAllCircles();
+      // inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Harvest;
 
     }
 
     public void ChangeToPlacingMode()
     {
-      inventoryUi.HideAllCircles();
+      print("change to place mode");
+
+      // inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Placing;
       // stockCircle.SetActive(true);
       // lighterCircle.SetActive(false);
@@ -59,7 +59,7 @@ namespace Core
     public void ChangeToSeedingMode()
     {
       currentActionMode = ActionMode.Seeding;
-      inventoryUi.HideAllCircles();
+      // inventoryUi.HideAllCircles();
     }
   }
 }

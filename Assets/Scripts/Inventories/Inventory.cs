@@ -1,6 +1,7 @@
 using System;
 using Core;
 using Inventory;
+using UI;
 using UnityEngine;
 
 namespace Inventories
@@ -138,12 +139,18 @@ namespace Inventories
       {
         _slots[slot].amount = 0;
         _slots[slot].item = null;
+
+        FindObjectOfType<InventoryUi>().slotCircled = -1;
       }
 
       if (InventoryUpdated != null)
       {
         InventoryUpdated();
       }
+
+
+
+      // InventoryUi
     }
 
     /// <summary>

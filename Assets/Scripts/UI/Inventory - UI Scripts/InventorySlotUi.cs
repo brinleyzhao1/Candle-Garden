@@ -15,13 +15,18 @@ namespace UI
   {
     // CONFIG DATA
     [SerializeField] InventoryItemIcon iconInChild = null;
-    [SerializeField] private GameObject circle;
+    [SerializeField] public GameObject circle;
     int index = 0;
     // [SerializeField] private Color selectedColor;
 
     Inventories.Inventory inventory;
     private InventoryItem thisItem;
 
+    private InventoryUi inventoryUi;
+
+
+
+    // public bool selfIsCircled = false;
 
 
     // CACHE
@@ -39,6 +44,8 @@ namespace UI
 
     public void Setup(Inventories.Inventory inventory, int index)
     {
+      // print("Set up");
+
       this.inventory = inventory;
       this.index = index;
       thisItem = inventory.GetItemInSlot(index);
@@ -50,37 +57,46 @@ namespace UI
     private void Start()
     {
       // actionStore.StoreUpdated += UpdateIcon;
+      inventoryUi = FindObjectOfType<InventoryUi>();
     }
 
     public void BtnSelect()
     {
-
-
       if (thisItem.category == CategoryEnum.Seed)
       {
         GameAssets.Player.ChangeToSeedingMode();//changing mode hides all circles
-        OpenCircle();
+
+        OpenOnlyThisCircle();
       }
       else if (thisItem.category == CategoryEnum.Candle)
       {
         GameAssets.Player.ChangeToPlacingMode();
-        OpenCircle();
+
+        OpenOnlyThisCircle();
       }
       else if (thisItem.category == CategoryEnum.Lighter)
       {
         GameAssets.Player.ChangeToLighterMode();
-        OpenCircle();
+
+        OpenOnlyThisCircle();
       }
       else if (thisItem.category == CategoryEnum.Shovel)
       {
         GameAssets.Player.ChangeToShovelMode();
-        OpenCircle();
+
+        OpenOnlyThisCircle();
       }
     }
 
-    private void OpenCircle()
+    private void OpenOnlyThisCircle()
     {
+      print("open only "+index);
+
+      inventoryUi.slotCircled = index;
+
+      inventoryUi.HideAllCircles();
       circle.gameObject.SetActive(true);
+
       GameAssets.SFX.PlayOneShot(GameAssets.ActionSlotSFX);
     }
     // PUBLIC
@@ -119,7 +135,7 @@ namespace UI
     }
 
 
-    public void HideHighlight()
+    public void HideCircle()
     {
       circle.gameObject.SetActive(false);
     }
