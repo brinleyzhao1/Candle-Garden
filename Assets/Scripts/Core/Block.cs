@@ -68,15 +68,13 @@ public class Block : MonoBehaviour
     if (TryRemoveOneFromInventory(GameAssets.matureCandle)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
-
+    //
     var newCandle = Instantiate(GameAssets.GrownCandle01, transform.position, Quaternion.identity);
     newCandle.transform.parent = transform;
     newCandle.GetComponent<UnlitCandle>().parentBlock = this;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
 
-    // GameAssets.Player.candleStock -= 1;
 
-    // GameAssets.CandleStockNumTxt.text = GameAssets.Player.candleStock.ToString();
     isEmpty = false;
   }
 
