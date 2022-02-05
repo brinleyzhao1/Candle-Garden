@@ -22382,6 +22382,7 @@ MonoBehaviour:
   setLoseHealthSFX: {fileID: 8300000, guid: 7793af8ef4d304c7183a5c0f26fd93d8, type: 3}
   setErrorSFX: {fileID: 8300000, guid: 40148600617b5479b8c4653169ff085a, type: 3}
   setSeedingSFX: {fileID: 8300000, guid: 9e45e448b44e14dbda1384f2e058a118, type: 3}
+  setHarvestSFX: {fileID: 0}
   setPlacingSFX: {fileID: 8300000, guid: 9d683f5416763411aa3f30e791c0f08d, type: 3}
   setMoneySFX: {fileID: 8300000, guid: 0b32c552f5ad64974ae515c7287ce5dd, type: 3}
   setActionSlotSFX: {fileID: 8300000, guid: 78829eced485a4fa0b09ff736e57762e, type: 3}
@@ -30421,6 +30422,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1968608490544751171, guid: 736ce9adfc861483fb2b99dd460126d0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1992642038597384517, guid: 736ce9adfc861483fb2b99dd460126d0,
         type: 3}
       propertyPath: m_RootOrder

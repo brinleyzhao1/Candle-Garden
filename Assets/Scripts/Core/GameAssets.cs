@@ -25,6 +25,8 @@ namespace Core
 
     [SerializeField] private AudioClip setSeedingSFX;
     public static AudioClip SeedingSFX;
+    [SerializeField] private AudioClip setHarvestSFX;
+    public static AudioClip HarvestSFX;
 
 
     [SerializeField] private AudioClip setPlacingSFX;
@@ -131,6 +133,7 @@ namespace Core
       PlacingSFX = setPlacingSFX;
       MoneySFX = setMoneySFX;
       ActionSlotSFX = setActionSlotSFX;
+      HarvestSFX = setHarvestSFX;
 
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;

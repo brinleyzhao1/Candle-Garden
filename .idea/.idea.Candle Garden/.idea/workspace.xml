@@ -22,7 +22,9 @@
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candles/Grown candle 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candles/Grown candle 01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,9 +101,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CategoryEnum.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
@@ -109,6 +109,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +171,7 @@
       <workItem from="1640611831849" duration="5734000" />
       <workItem from="1640721193253" duration="1132000" />
       <workItem from="1643834753004" duration="798000" />
-      <workItem from="1643898109927" duration="5561000" />
+      <workItem from="1643898109927" duration="5947000" />
     </task>
     <servers />
   </component>
@@ -202,9 +204,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1640024953759" />
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1643901708036">
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1644083224759">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1643901708036" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1644083224759" />
   </component>
 </project>

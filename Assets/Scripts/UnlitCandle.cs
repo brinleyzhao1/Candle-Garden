@@ -69,7 +69,7 @@ public class UnlitCandle : MonoBehaviour
 
   private void HarvestCandle()
   {
-    GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
+    GameAssets.SFX.PlayOneShot(GameAssets.HarvestSFX);
     // GameAssets.Player.candleStock += 1;
     GameAssets.inventory.AddToFirstEmptySlot(GameAssets.matureCandle, 1);
     parentBlock.isEmpty = true;
