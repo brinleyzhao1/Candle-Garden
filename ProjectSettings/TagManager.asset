@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Inventory
   - Tooltip
+  - Ground Block
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground Block
   - Water
   - UI
   - Post Proces

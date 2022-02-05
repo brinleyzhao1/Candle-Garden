@@ -21,10 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candles/Grown candle 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candles/Grown candle 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +104,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CategoryEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +172,7 @@
       <workItem from="1640611831849" duration="5734000" />
       <workItem from="1640721193253" duration="1132000" />
       <workItem from="1643834753004" duration="798000" />
-      <workItem from="1643898109927" duration="5947000" />
+      <workItem from="1643898109927" duration="7315000" />
     </task>
     <servers />
   </component>

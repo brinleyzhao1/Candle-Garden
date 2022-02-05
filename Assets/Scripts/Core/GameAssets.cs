@@ -104,6 +104,10 @@ namespace Core
     private GameObject setMatureEffect;
     public static GameObject MatureEffect;
 
+    [SerializeField]
+    private GameObject setPointToClickEffect;
+    public static GameObject PointToClickEffect;
+
     [SerializeField] private InventoryItem setLighterObject;
     public static InventoryItem LighterObject;
 
@@ -151,6 +155,8 @@ namespace Core
       LighterObject = setLighterObject;
       SeedObject = setSeedObject;
       ShovelObject = setShovelObject;
+
+      PointToClickEffect = setPointToClickEffect;
     }
   }
 }

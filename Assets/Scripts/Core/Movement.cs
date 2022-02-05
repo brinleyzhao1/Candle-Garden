@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 
 public class Movement : MonoBehaviour
 {
-
   [SerializeField] private AudioSource flyingSFX;
   private Transform _body;
 
@@ -24,16 +23,13 @@ public class Movement : MonoBehaviour
 
   private void Update()
   {
-
     if (Input.GetMouseButtonDown(0))
     {
-      if (!EventSystem.current.IsPointerOverGameObject())//if not clicked on an UI
+      if (!EventSystem.current.IsPointerOverGameObject()) //if not clicked on an UI
       {
         MoveToCursor();
       }
-
     }
-
   }
 
   private void MoveToCursor()
@@ -49,12 +45,15 @@ public class Movement : MonoBehaviour
 
       if (hasHit)
       {
-         GetComponent<NavMeshAgent>().destination = hit.point;
+        GetComponent<NavMeshAgent>().destination = hit.point;
+
+        if (hit.collider.CompareTag("Ground Block"))
+        {
+          // print("hit ground");
+          GameObject effect = Instantiate(GameAssets.PointToClickEffect, hit.point + new Vector3(0,0,0), Quaternion.identity);
+
+        }
       }
-
-
     }
   }
-
-
 }

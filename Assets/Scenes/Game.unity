@@ -22382,7 +22382,7 @@ MonoBehaviour:
   setLoseHealthSFX: {fileID: 8300000, guid: 7793af8ef4d304c7183a5c0f26fd93d8, type: 3}
   setErrorSFX: {fileID: 8300000, guid: 40148600617b5479b8c4653169ff085a, type: 3}
   setSeedingSFX: {fileID: 8300000, guid: 9e45e448b44e14dbda1384f2e058a118, type: 3}
-  setHarvestSFX: {fileID: 0}
+  setHarvestSFX: {fileID: 8300000, guid: 9e45e448b44e14dbda1384f2e058a118, type: 3}
   setPlacingSFX: {fileID: 8300000, guid: 9d683f5416763411aa3f30e791c0f08d, type: 3}
   setMoneySFX: {fileID: 8300000, guid: 0b32c552f5ad64974ae515c7287ce5dd, type: 3}
   setActionSlotSFX: {fileID: 8300000, guid: 78829eced485a4fa0b09ff736e57762e, type: 3}
@@ -22403,6 +22403,8 @@ MonoBehaviour:
   setMoney: {fileID: 1241518941}
   setEndGamePanel: {fileID: 2129907026}
   setMatureEffect: {fileID: 4429991862075384056, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
+    type: 3}
+  setPointToClickEffect: {fileID: 1929956291960174, guid: 6e92d382bf898493a95b5d8ee5d66b38,
     type: 3}
   setLighterObject: {fileID: 11400000, guid: 8baea83bceb1e4ae0ac5c79a650c9b15, type: 2}
   setShovelObject: {fileID: 11400000, guid: aa7d0659aaf95409a8201adac3e353f8, type: 2}
