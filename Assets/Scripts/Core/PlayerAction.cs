@@ -7,7 +7,7 @@ namespace Core
   {
     public ActionMode currentActionMode = ActionMode.Harvest;
 
-    public int seedStock;
+
     // public int candleStock; //grown candles harvested
 
     //UI effect
@@ -48,18 +48,13 @@ namespace Core
 
     public void ChangeToPlacingMode()
     {
-      print("change to place mode");
-
-      // inventoryUi.HideAllCircles();
       currentActionMode = ActionMode.Placing;
-      // stockCircle.SetActive(true);
-      // lighterCircle.SetActive(false);
+
     }
 
     public void ChangeToSeedingMode()
     {
       currentActionMode = ActionMode.Seeding;
-      // inventoryUi.HideAllCircles();
     }
   }
 }

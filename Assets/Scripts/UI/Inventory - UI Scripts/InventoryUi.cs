@@ -75,12 +75,10 @@ namespace UI
         // print("try to reopen");
         var slotShouldBeCircled = transform.GetChild(slotCircled);
 
-        // GameObject circle = slotShouldBeCircled.GetComponent<InventorySlotUi>().circle.gameObject;
+
         GameObject circle = slotShouldBeCircled.GetChild(1).gameObject;
-        // print(circle);
-        // print(circle.activeSelf);
+
         circle.SetActive(true);
-        // print("circle opened");
       }
     }
 
