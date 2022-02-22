@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/-3,3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/EndGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Intro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
@@ -112,6 +108,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +169,8 @@
       <workItem from="1640611831849" duration="5734000" />
       <workItem from="1640721193253" duration="1132000" />
       <workItem from="1643834753004" duration="798000" />
-      <workItem from="1643898109927" duration="9102000" />
+      <workItem from="1643898109927" duration="9358000" />
+      <workItem from="1645565453824" duration="696000" />
     </task>
     <servers />
   </component>

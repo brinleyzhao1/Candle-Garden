@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -622,8 +622,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278758399
-  m_fontColor: {r: 1, g: 0.67193294, b: 0.032075405, a: 1}
+    rgba: 4281186559
+  m_fontColor: {r: 1, g: 0.72011334, b: 0.17699999, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1085,8 +1085,8 @@ Light:
   m_Color: {r: 1, g: 0.77349055, b: 0.35283017, a: 1}
   m_Intensity: 3.5
   m_Range: 500
-  m_SpotAngle: 67
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 75
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1756,7 +1756,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9033878, b: 0.47400004, a: 1}
+  m_Color: {r: 1, g: 0.92201495, b: 0.582, a: 1}
   m_Intensity: 6
   m_Range: 500
   m_SpotAngle: 67
@@ -2092,7 +2092,7 @@ PrefabInstance:
     - target: {fileID: 5372872980980647441, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5372872980980647441, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}
@@ -2137,7 +2137,7 @@ PrefabInstance:
     - target: {fileID: 5372872980980647441, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: UI.MainMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5372872980980647441, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}
@@ -2162,7 +2162,12 @@ PrefabInstance:
     - target: {fileID: 7666800323669099224, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}
       propertyPath: m_Name
-      value: Main Menu Button
+      value: Start Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666800323669099224, guid: 4ae1dadf8dfd2453882018823d95ac8a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7702007533219064724, guid: 4ae1dadf8dfd2453882018823d95ac8a,
         type: 3}

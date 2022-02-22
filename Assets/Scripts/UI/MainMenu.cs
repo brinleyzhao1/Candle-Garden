@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace UI
 {
-  public void BtnStart()
+  public class MainMenu : MonoBehaviour
   {
-    SceneManager.LoadScene(1);
-  }
+    public void BtnStart()
+    {
+      SceneManager.LoadScene(1);
+      // SceneManager.LoadScene("Game");
+    }
 
-  // public void BtnPlaySFX()
-  // {
-  //
-  // }
+    // public void BtnPlaySFX()
+    // {
+    //
+    // }
+  }
 }
