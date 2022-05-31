@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace UI
@@ -10,6 +11,7 @@ namespace UI
       Time.timeScale = 0;
 
     }
+
 
     // Update is called once per frame
     void Update()

@@ -4496,6 +4496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  distanceWithinInteract: 4.5
   blockCircle: {fileID: 1865898198}
 --- !u!1001 &335810669
 PrefabInstance:
@@ -24676,7 +24677,7 @@ GameObject:
   - component: {fileID: 1954842750}
   - component: {fileID: 1954842749}
   m_Layer: 0
-  m_Name: looperman-l-0641036-0108402-6stringsofdoom-future-or-metro-boomin-type-piano
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25700,7 +25701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentActionMode: 4
-  seedStock: 5
   tutorialPanel: {fileID: 216178169}
 --- !u!4 &2071881029 stripped
 Transform:

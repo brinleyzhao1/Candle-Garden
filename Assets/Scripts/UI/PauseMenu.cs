@@ -27,7 +27,8 @@ namespace UI
     public void BtnTutorial()
     {
       tutorialPanel.SetActive(true);
-      BtnClose();
+      gameObject.SetActive(false);
+
     }
 
     public void BtnQuit()
