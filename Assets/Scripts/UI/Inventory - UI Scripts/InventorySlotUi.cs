@@ -44,7 +44,7 @@ namespace UI
 
     public void Setup(Inventories.Inventory inventory, int index)
     {
-      // print("Set up");
+      print("Set up");
 
       this.inventory = inventory;
       this.index = index;
@@ -61,7 +61,12 @@ namespace UI
     }
 
     public void BtnSelect()
+
     {
+      print(thisItem);
+      print(inventory.GetItemInSlot(index));
+      print(inventory.GetNumberInSlot(index));
+
       if (thisItem.category == CategoryEnum.Seed)
       {
         GameAssets.Player.ChangeToSeedingMode();//changing mode hides all circles
@@ -92,7 +97,7 @@ namespace UI
 
     private void OpenOnlyThisCircle()
     {
-      print("open only "+index);
+      // print("open only "+index);
 
       inventoryUi.slotCircled = index;
 

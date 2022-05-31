@@ -40,7 +40,16 @@ namespace Core
 
     #region Candles
 
-    [Header("Candles")] [SerializeField] private GameObject setBabyCandle01;
+    [Header("Candles")]
+
+
+    [SerializeField] private InventoryItem setSeedObject01;
+    public static InventoryItem SeedObject01;
+    [SerializeField] private InventoryItem setSeedObject02;
+    public static InventoryItem SeedObject02;
+
+
+    [SerializeField] private GameObject setBabyCandle01;
     public static GameObject BabyCandle01;
 
     [SerializeField] private GameObject setBabyCandle02;
@@ -55,10 +64,10 @@ namespace Core
     [SerializeField] private GameObject setLightedCandle02;
     public static GameObject LightedCandle02;
 
-    [SerializeField] private TextMeshProUGUI setCandleStockNum;
-    public static TextMeshProUGUI CandleStockNumTxt;
-    [SerializeField] private TextMeshProUGUI setSeedStockNumTxt;
-    public static TextMeshProUGUI SeedStockNumTxt;
+    // [SerializeField] private TextMeshProUGUI setCandleStockNum;
+    // public static TextMeshProUGUI CandleStockNumTxt;
+    // [SerializeField] private TextMeshProUGUI setSeedStockNumTxt;
+    // public static TextMeshProUGUI SeedStockNumTxt;
 
     #endregion
 
@@ -131,6 +140,7 @@ namespace Core
     private void Awake()
     {
       Player = setPlayer;
+      SeedObject02 = setSeedObject02;
       BabyCandle01 = setBabyCandle01;
       BabyCandle02 = setBabyCandle02;
       LightedCandle01 = setLightedCandle01;
@@ -143,8 +153,8 @@ namespace Core
 
 
       LoseHealthSFX = setLoseHealthSFX;
-      CandleStockNumTxt = setCandleStockNum;
-      SeedStockNumTxt = setSeedStockNumTxt;
+      // CandleStockNumTxt = setCandleStockNum;
+      // SeedStockNumTxt = setSeedStockNumTxt;
       ErrorSFX = setErrorSFX;
       SeedingSFX = setSeedingSFX;
       PlacingSFX = setPlacingSFX;

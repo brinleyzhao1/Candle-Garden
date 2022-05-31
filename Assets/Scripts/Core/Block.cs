@@ -75,29 +75,29 @@ public class Block : MonoBehaviour
 
   private void TryPlantCandleSeed()
   {
-    if (TryRemoveOneFromInventory(GameAssets.SeedObject)) return;
 
     // InventoryUi inventoryUi = FindObjectOfType<InventoryUi>();
     // inventoryUi.MaintainPreviousCircle();
 
-    GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
-
-
     GameObject newCandle = null;
     if (GameAssets.Player.actionVersion == 1)
     {
+      if (TryRemoveOneFromInventory(GameAssets.SeedObject)) return;
        newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
     }
     else if (GameAssets.Player.actionVersion == 2)
     {
+      if (TryRemoveOneFromInventory(GameAssets.SeedObject02)) return;
        newCandle = Instantiate(GameAssets.BabyCandle02, transform.position, Quaternion.identity);
     }
-
 
     newCandle.transform.parent = transform;
     newCandle.GetComponent<UnlitCandle>().parentBlock = this;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);
     isEmpty = false;
+
+    GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
+
   }
 
   private void TryPlaceMatureCandle()
@@ -120,9 +120,11 @@ public class Block : MonoBehaviour
     int slotInInventory = GameAssets.inventory.HasItem(item);
     if (slotInInventory == -1)
     {
+      // print("cannot find slot");
       return true; //couldn't
     }
 
+    // print("try remove one from inventory");
     GameAssets.inventory.RemoveFromSlot(slotInInventory, 1);
 
 

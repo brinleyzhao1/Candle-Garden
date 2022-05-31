@@ -21,7 +21,7 @@ namespace Inventories
     // public CategoryEnum category;
 
     // STATE, the actual inventory
-    InventorySlot[] _slots;
+     InventorySlot[] _slots;
 
     public struct InventorySlot
     {
@@ -84,7 +84,7 @@ namespace Inventories
     {
       int i = FindSlot(item);
 
-      if (i < 0)
+      if (i < 0) //if cannot find slot
       {
         return false;
       }
@@ -92,6 +92,9 @@ namespace Inventories
       _slots[i].item = item;
       _slots[i].amount += number;
       InventoryUpdated?.Invoke();
+
+
+
 
       return true;
     }
@@ -135,6 +138,7 @@ namespace Inventories
     public void RemoveFromSlot(int slot, int number)
     {
       _slots[slot].amount -= number;
+
       if (_slots[slot].amount <= 0)
       {
         _slots[slot].amount = 0;
@@ -142,6 +146,7 @@ namespace Inventories
 
         FindObjectOfType<InventoryUi>().slotCircled = -1;
       }
+
 
       if (InventoryUpdated != null)
       {
@@ -167,7 +172,7 @@ namespace Inventories
       if (_slots[slot].item != null)
       {
         return AddToFirstEmptySlot(item, number);
-        ;
+
       }
 
       var i = FindStack(item);
