@@ -1,7 +1,6 @@
-using Inventories;
 using UnityEngine;
 
-namespace Inventory
+namespace Inventories
 {
   /// <summary>
   /// a subclass of InventoryItem, represent seeds

@@ -6,6 +6,7 @@ using UnityEngine;
 public class UnlitCandle : MonoBehaviour
 {
   public int growTime = 30;
+  public int versionNum;
 
   public CandleState state;
   [SerializeField] private AudioClip LighterSound;
@@ -62,7 +63,17 @@ public class UnlitCandle : MonoBehaviour
   {
     GameAssets.SFX.PlayOneShot(LighterSound);
 
-    var newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
+    GameObject newCandle = null;
+    if (versionNum == 1)
+    {
+      newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
+    }
+    else if (versionNum == 2)
+    {
+      newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
+    }
+
+
     newCandle.transform.parent = transform.parent;
     newCandle.GetComponent<LightedCandle>().parentBlock = parentBlock;
     Destroy(gameObject);
@@ -83,12 +94,24 @@ public class UnlitCandle : MonoBehaviour
   {
     state = CandleState.GrowingUp;
 
-    float timeLeft = 0.1f;
-    while (timeLeft < growTime)
+    float timePassed = 0.1f;
+    while (timePassed < growTime)
     {
-      transform.localScale = new Vector3(9, 15 * (timeLeft / growTime), 9);
+      int fullGrownHeight = 5;
+      if (versionNum == 1)
+      {
+        fullGrownHeight = 15;
+      }
+      else if (versionNum== 2)
+      {
+        fullGrownHeight = 6;
+      }
+
+      var localScale = transform.localScale;
+      localScale = new Vector3(localScale.x, fullGrownHeight * (timePassed / growTime), localScale.z);
+      transform.localScale = localScale;
       yield return new WaitForSeconds(0.2f);
-      timeLeft += 0.2f;
+      timePassed += 0.2f;
     }
 
     state = CandleState.Ready;

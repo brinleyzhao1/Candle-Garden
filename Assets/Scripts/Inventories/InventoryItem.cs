@@ -20,6 +20,8 @@ namespace Inventories
 
     public CategoryEnum category = CategoryEnum.Seed;
 
+    public int versionNumber; //which candle/seed. the bigger number the better, start at 1
+
     [Tooltip("The UI icon to represent this item in the inventory.")] [SerializeField]
     Sprite icon = null;
 

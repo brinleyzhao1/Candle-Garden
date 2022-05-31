@@ -45,18 +45,16 @@ public class Block : MonoBehaviour
 
   private void OnMouseOver()
   {
-    if (TooFar())
+    if (Input.GetMouseButtonDown(1))
     {
-      if (Input.GetMouseButtonDown(1))
+      if (TooFar())
       {
         GameAssets.Feedback.ShowTooFarText();
-      }
-      return; //too far
-    }
 
-    if (isEmpty)
-    {
-      if (Input.GetMouseButtonDown(1))
+        return; //too far
+      }
+
+      if (isEmpty)
       {
         if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Seeding)
         {
@@ -84,7 +82,18 @@ public class Block : MonoBehaviour
 
     GameAssets.SFX.PlayOneShot(GameAssets.SeedingSFX);
 
-    var newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
+
+    GameObject newCandle = null;
+    if (GameAssets.Player.actionVersion == 1)
+    {
+       newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
+    }
+    else if (GameAssets.Player.actionVersion == 2)
+    {
+       newCandle = Instantiate(GameAssets.BabyCandle02, transform.position, Quaternion.identity);
+    }
+
+
     newCandle.transform.parent = transform;
     newCandle.GetComponent<UnlitCandle>().parentBlock = this;
     newCandle.transform.position = newCandle.transform.position + new Vector3(0, 2, 0);

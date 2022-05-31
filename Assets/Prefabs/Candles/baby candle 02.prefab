@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5744142672462250336}
   - component: {fileID: 7400575389696585813}
   m_Layer: 0
-  m_Name: baby candle 01
+  m_Name: baby candle 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717092747114881636}
-  m_Mesh: {fileID: 4300000, guid: 394728f2b233a1a4b97c2f3fdc3cd753, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 86afa3c6ac7e1bd4ca6e7aa435fb5c0f, type: 3}
 --- !u!23 &5693592173364869506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b497f11b7b7144bacb9f3cad2ca096ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growTime: 30
-  versionNum: 1
+  growTime: 45
+  versionNum: 2
   state: 0
   LighterSound: {fileID: 8300000, guid: e6c1e56aab12d4cb9aa5a17ce84379fb, type: 3}
   parentBlock: {fileID: 0}

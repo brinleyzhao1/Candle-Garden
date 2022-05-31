@@ -6,6 +6,7 @@ using UnityEngine;
 public class LightedCandle : MonoBehaviour
 {
   public int lifeTime = 30;
+  public int versionNum;
   public Block parentBlock;
 
 
@@ -23,7 +24,19 @@ public class LightedCandle : MonoBehaviour
     float timeLeft = lifeTime;
     while (timeLeft > 0.3f)
     {
-      transform.localScale = new Vector3( 9, 15 * (timeLeft/lifeTime),9);
+      int fullHeight = 5;
+      if (versionNum == 1)
+      {
+        fullHeight = 15;
+      }
+      else if (versionNum == 2)
+      {
+        fullHeight = 6;
+      }
+
+      var localScale = transform.localScale;
+      localScale = new Vector3( localScale.x, fullHeight * (timeLeft/lifeTime),localScale.z);
+      transform.localScale = localScale;
       yield return new WaitForSeconds(0.2f);
       timeLeft -= 0.2f;
     }

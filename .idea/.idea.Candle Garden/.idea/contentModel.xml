@@ -73,7 +73,6 @@
             </e>
           </e>
         </e>
-        <e p="FeedbackText.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
           <e p="Core" t="Include">
@@ -88,6 +87,7 @@
           </e>
           <e p="CubeEditor.cs" t="Include" />
           <e p="EndGame.cs" t="Include" />
+          <e p="FeedbackText.cs" t="Include" />
           <e p="Intro.cs" t="Include" />
           <e p="Inventories" t="Include">
             <e p="ActionItem.cs" t="Include" />
@@ -101,6 +101,7 @@
             <e p="ItemTooltip.cs" t="Include" />
             <e p="TooltipSpawner.cs" t="Include" />
           </e>
+          <e p="TitleBlink.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="BgMoving.cs" t="Include" />
             <e p="Dragging" t="Include">
@@ -175,7 +176,6 @@
             </e>
           </e>
         </e>
-        <e p="TitleBlink.cs" t="Include" />
       </e>
       <e p="Candle Garden.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

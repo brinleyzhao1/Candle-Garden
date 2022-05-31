@@ -65,12 +65,14 @@ namespace UI
       if (thisItem.category == CategoryEnum.Seed)
       {
         GameAssets.Player.ChangeToSeedingMode();//changing mode hides all circles
+        GameAssets.Player.actionVersion = thisItem.versionNumber;
 
         OpenOnlyThisCircle();
       }
       else if (thisItem.category == CategoryEnum.Candle)
       {
         GameAssets.Player.ChangeToPlacingMode();
+        GameAssets.Player.actionVersion = thisItem.versionNumber;
 
         OpenOnlyThisCircle();
       }

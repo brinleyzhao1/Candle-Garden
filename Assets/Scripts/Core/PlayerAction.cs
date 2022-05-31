@@ -6,6 +6,7 @@ namespace Core
   public class PlayerAction : MonoBehaviour
   {
     public ActionMode currentActionMode = ActionMode.Harvest;
+    public int actionVersion; //which candle/seed
 
 
     // public int candleStock; //grown candles harvested

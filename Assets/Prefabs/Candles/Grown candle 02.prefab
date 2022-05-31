@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5873859072077931609}
   - component: {fileID: 3029784387857164832}
   m_Layer: 0
-  m_Name: Grown candle 01
+  m_Name: Grown candle 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1995547902088626503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.711, y: 1.982, z: 4.278}
-  m_LocalScale: {x: 9, y: 15, z: 9}
+  m_LocalScale: {x: 8, y: 6, z: 8}
   m_Children:
   - {fileID: 3757737983916921336}
   m_Father: {fileID: 0}
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995547902088626503}
-  m_Mesh: {fileID: 4300000, guid: 394728f2b233a1a4b97c2f3fdc3cd753, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 86afa3c6ac7e1bd4ca6e7aa435fb5c0f, type: 3}
 --- !u!23 &2010046086946822817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growTime: 30
-  versionNum: 1
+  versionNum: 2
   state: 1
   LighterSound: {fileID: 8300000, guid: e6c1e56aab12d4cb9aa5a17ce84379fb, type: 3}
   parentBlock: {fileID: 0}
@@ -154,13 +154,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4429991862075384057, guid: bfe4e0cfd6e0e41678cbb62ea36e2c93,
         type: 3}
