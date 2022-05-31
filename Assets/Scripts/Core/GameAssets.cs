@@ -117,6 +117,9 @@ namespace Core
     [SerializeField] private InventoryItem setSeedObject;
     public static InventoryItem SeedObject;
 
+    [SerializeField] private FeedbackText setFeedbackText;
+    public static FeedbackText Feedback;
+
 
     private void Awake()
     {
@@ -157,6 +160,7 @@ namespace Core
       ShovelObject = setShovelObject;
 
       PointToClickEffect = setPointToClickEffect;
+      Feedback = setFeedbackText;
     }
   }
 }

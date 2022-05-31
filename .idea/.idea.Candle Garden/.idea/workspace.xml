@@ -21,18 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Fonts/Fonts - Ghost Title/Ghost Death SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Fonts/Fonts - Ghost Title/Ghost Death SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/title animation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/title animation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FeedbackText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ItemTooltip.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Intro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TitleBlink.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,23 +103,25 @@
         <option value="$PROJECT_DIR$/Assets/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Intro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CategoryEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventoryUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/BgMoving.cs" />
         <option value="$PROJECT_DIR$/Assets/TitleBlink.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/FeedbackText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
       </list>
     </option>
   </component>
@@ -184,7 +184,7 @@
       <workItem from="1643834753004" duration="798000" />
       <workItem from="1643898109927" duration="9358000" />
       <workItem from="1645565453824" duration="1171000" />
-      <workItem from="1653997480558" duration="1353000" />
+      <workItem from="1653997480558" duration="2594000" />
     </task>
     <servers />
   </component>
@@ -209,17 +209,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="SettingsEditor" timestamp="1640355871495">
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1654001931428">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640355871495" />
-    <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog" timestamp="1640024953759">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1640024953759" />
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1644338739898">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1644338739898" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1654001931428" />
   </component>
 </project>

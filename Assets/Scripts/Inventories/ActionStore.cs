@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Inventories;
+using Inventory;
 using UnityEngine;
 
-namespace Inventory
+namespace Inventories
 {
   /// <summary>
   /// Provides the storage for an action bar. The bar has a finite number of

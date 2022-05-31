@@ -25,6 +25,7 @@ public class UnlitCandle : MonoBehaviour
       float distanceFromPlayer = Vector3.Distance(GameAssets.Player.transform.position, transform.position);
       if (distanceFromPlayer > 4)
       {
+        GameAssets.Feedback.ShowTooFarText();
         return; //too far
       }
 

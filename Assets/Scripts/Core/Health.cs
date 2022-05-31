@@ -78,7 +78,7 @@ public class Health : MonoBehaviour
   private IEnumerator DamageIfUnsafe()
   {
     damageCoroutineRunning = true;
-    yield return new WaitForSeconds(3);
+    yield return new WaitForSeconds(1);
 
     while (damageCoroutineRunning == true)
     {

@@ -1,57 +1,56 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Core;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-public class Movement : MonoBehaviour
+namespace Core
 {
-  [SerializeField] private AudioSource flyingSFX;
-  private Transform _body;
-
-
-  // Use this for initialization
-  void Start()
+  public class Movement : MonoBehaviour
   {
-    // Pathfinder pathfinder = FindObjectOfType<Pathfinder>();
-    //   var path = pathfinder.GetPath();
-    //   _body = transform.Find("Body");
-    //   StartCoroutine(FollowPath(path));
-  }
+    [SerializeField] private AudioSource flyingSFX;
+    private Transform _body;
 
-  private void Update()
-  {
-    if (Input.GetMouseButtonDown(0))
+
+    // Use this for initialization
+    void Start()
     {
-      if (!EventSystem.current.IsPointerOverGameObject()) //if not clicked on an UI
+      // Pathfinder pathfinder = FindObjectOfType<Pathfinder>();
+      //   var path = pathfinder.GetPath();
+      //   _body = transform.Find("Body");
+      //   StartCoroutine(FollowPath(path));
+    }
+
+    private void Update()
+    {
+      if (Input.GetMouseButtonDown(0))
       {
-        MoveToCursor();
+        if (!EventSystem.current.IsPointerOverGameObject()) //if not clicked on an UI
+        {
+          MoveToCursor();
+        }
       }
     }
-  }
 
-  private void MoveToCursor()
-  {
-    // GameAssets.SFX.PlayOneShot(GameAssets.FlyingSFX);
-    flyingSFX.Play();
-
-    if (Camera.main != null)
+    private void MoveToCursor()
     {
-      Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-      RaycastHit hit;
-      bool hasHit = Physics.Raycast(ray, out hit);
+      // GameAssets.SFX.PlayOneShot(GameAssets.FlyingSFX);
+      flyingSFX.Play();
 
-      if (hasHit)
+      if (Camera.main != null)
       {
-        GetComponent<NavMeshAgent>().destination = hit.point;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        bool hasHit = Physics.Raycast(ray, out hit);
 
-        if (hit.collider.CompareTag("Ground Block"))
+        if (hasHit)
         {
-          // print("hit ground");
-          GameObject effect = Instantiate(GameAssets.PointToClickEffect, hit.point + new Vector3(0,0,0), Quaternion.identity);
+          GetComponent<NavMeshAgent>().destination = hit.point;
 
+          if (hit.collider.CompareTag("Ground Block"))
+          {
+            // print("hit ground");
+            GameObject effect = Instantiate(GameAssets.PointToClickEffect, hit.point + new Vector3(0,0,0), Quaternion.identity);
+
+          }
         }
       }
     }

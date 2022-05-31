@@ -45,7 +45,15 @@ public class Block : MonoBehaviour
 
   private void OnMouseOver()
   {
-    if (TooFar()) return; //too far
+    if (TooFar())
+    {
+      if (Input.GetMouseButtonDown(1))
+      {
+        GameAssets.Feedback.ShowTooFarText();
+      }
+      return; //too far
+    }
+
     if (isEmpty)
     {
       if (Input.GetMouseButtonDown(1))
