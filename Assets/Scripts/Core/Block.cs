@@ -84,11 +84,14 @@ public class Block : MonoBehaviour
     {
       if (TryRemoveOneFromInventory(GameAssets.SeedObject)) return;
        newCandle = Instantiate(GameAssets.BabyCandle01, transform.position, Quaternion.identity);
+       GameAssets.ExperienceSystem.CountExperienceOnAction("grow candle 01");
+
     }
     else if (GameAssets.Player.actionVersion == 2)
     {
       if (TryRemoveOneFromInventory(GameAssets.SeedObject02)) return;
        newCandle = Instantiate(GameAssets.BabyCandle02, transform.position, Quaternion.identity);
+       GameAssets.ExperienceSystem.CountExperienceOnAction("grow candle 02");
     }
 
     newCandle.transform.parent = transform;
@@ -124,7 +127,6 @@ public class Block : MonoBehaviour
       return true; //couldn't
     }
 
-    // print("try remove one from inventory");
     GameAssets.inventory.RemoveFromSlot(slotInInventory, 1);
 
 
@@ -167,8 +169,5 @@ public class Block : MonoBehaviour
       }
     }
 
-    // Component[] joints = GetComponents<HingeJoint>() as Component[];
-    // foreach(Component joint in joints)
-    //   Destroy(joint as HingeJoint);
   }
 }

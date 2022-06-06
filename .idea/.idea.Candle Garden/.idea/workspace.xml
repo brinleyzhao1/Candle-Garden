@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,12 +112,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/SeedItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" />
       </list>
     </option>
@@ -153,10 +155,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="57793">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="57793" />
       <method v="2" />
     </configuration>
   </component>
@@ -180,7 +182,7 @@
       <workItem from="1643898109927" duration="9358000" />
       <workItem from="1645565453824" duration="1171000" />
       <workItem from="1653997480558" duration="8594000" />
-      <workItem from="1654526355204" duration="474000" />
+      <workItem from="1654526355204" duration="2374000" />
     </task>
     <servers />
   </component>
@@ -205,9 +207,92 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1654526365035">
+    <state width="1218" height="276" key="GridCell.Tab.0.bottom" timestamp="1654529585231">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1654526365035" />
+    <state width="1218" height="276" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1654529585231" />
+    <state width="1218" height="276" key="GridCell.Tab.0.center" timestamp="1654529585229">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1654529585229" />
+    <state width="1218" height="276" key="GridCell.Tab.0.left" timestamp="1654529585229">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1654529585229" />
+    <state width="1218" height="276" key="GridCell.Tab.0.right" timestamp="1654529585230">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1654529585230" />
+    <state width="1218" height="276" key="GridCell.Tab.1.bottom" timestamp="1654529585233">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1654529585233" />
+    <state width="1218" height="276" key="GridCell.Tab.1.center" timestamp="1654529585231">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1654529585231" />
+    <state width="1218" height="276" key="GridCell.Tab.1.left" timestamp="1654529585231">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1654529585231" />
+    <state width="1218" height="276" key="GridCell.Tab.1.right" timestamp="1654529585232">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1654529585232" />
+    <state width="1218" height="276" key="GridCell.Tab.2.bottom" timestamp="1654529585235">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1654529585235" />
+    <state width="1218" height="276" key="GridCell.Tab.2.center" timestamp="1654529585234">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1654529585234" />
+    <state width="1218" height="276" key="GridCell.Tab.2.left" timestamp="1654529585233">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1654529585233" />
+    <state width="1218" height="276" key="GridCell.Tab.2.right" timestamp="1654529585235">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1654529585235" />
+    <state width="1218" height="276" key="GridCell.Tab.3.bottom" timestamp="1654529585238">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.3.bottom/0.0.1280.800@0.0.1280.800" timestamp="1654529585238" />
+    <state width="1218" height="276" key="GridCell.Tab.3.center" timestamp="1654529585237">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.3.center/0.0.1280.800@0.0.1280.800" timestamp="1654529585237" />
+    <state width="1218" height="276" key="GridCell.Tab.3.left" timestamp="1654529585235">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.3.left/0.0.1280.800@0.0.1280.800" timestamp="1654529585235" />
+    <state width="1218" height="276" key="GridCell.Tab.3.right" timestamp="1654529585238">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1218" height="276" key="GridCell.Tab.3.right/0.0.1280.800@0.0.1280.800" timestamp="1654529585238" />
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup" timestamp="1654527508572">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1654527508572" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs</url>
+          <line>82</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" initialLine="82">
+            <startOffsets>
+              <option value="1800" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1866" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

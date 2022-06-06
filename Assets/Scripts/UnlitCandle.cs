@@ -53,7 +53,10 @@ public class UnlitCandle : MonoBehaviour
       StartCoroutine(GrowUp());
     }
 
+
+
   }
+
 
 
 
@@ -67,10 +70,12 @@ public class UnlitCandle : MonoBehaviour
     if (versionNum == 1)
     {
       newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
+      GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 01");
     }
     else if (versionNum == 2)
     {
       newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
+      GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 02");
     }
 
 

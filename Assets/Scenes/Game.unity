@@ -5829,7 +5829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7518bf0df324fe69eef7381facaa2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 0
+  currentLevel: 1
   currentExp: 0
   currentMax: 0
   levelText: {fileID: 1696974435}
@@ -20451,6 +20451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setPlayer: {fileID: 2068377843}
+  setExperience: {fileID: 424649582}
   setSFX: {fileID: 1567894170}
   setLoseHealthSFX: {fileID: 8300000, guid: 7793af8ef4d304c7183a5c0f26fd93d8, type: 3}
   setErrorSFX: {fileID: 8300000, guid: 40148600617b5479b8c4653169ff085a, type: 3}

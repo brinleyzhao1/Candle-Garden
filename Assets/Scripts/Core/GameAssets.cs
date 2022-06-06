@@ -1,6 +1,4 @@
 using Inventories;
-using Inventory;
-using TMPro;
 using UI;
 using UnityEngine;
 
@@ -11,6 +9,9 @@ namespace Core
   {
     [Header("Core")] [SerializeField] private PlayerAction setPlayer;
     public static PlayerAction Player;
+
+    [SerializeField] private Experience setExperience;
+    public static Experience ExperienceSystem;
 
     #region Audio
 
@@ -140,6 +141,9 @@ namespace Core
     private void Awake()
     {
       Player = setPlayer;
+      ExperienceSystem = setExperience;
+
+
       SeedObject02 = setSeedObject02;
       BabyCandle01 = setBabyCandle01;
       BabyCandle02 = setBabyCandle02;
