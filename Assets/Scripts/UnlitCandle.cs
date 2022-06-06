@@ -70,12 +70,12 @@ public class UnlitCandle : MonoBehaviour
     if (versionNum == 1)
     {
       newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
-      GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 01");
+
     }
     else if (versionNum == 2)
     {
       newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
-      GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 02");
+
     }
 
 
@@ -88,7 +88,23 @@ public class UnlitCandle : MonoBehaviour
   {
     GameAssets.SFX.PlayOneShot(GameAssets.HarvestSFX);
     // GameAssets.Player.candleStock += 1;
-    GameAssets.inventory.AddToFirstEmptySlot(GameAssets.matureCandle, 1);
+
+    if (versionNum == 1)
+    {
+      // GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 01");
+      GameAssets.inventory.AddToFirstEmptySlot(GameAssets.MatureCandle01, 1);
+      // newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
+
+    }
+    else if (versionNum == 2)
+    {
+      // GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 02");
+      GameAssets.inventory.AddToFirstEmptySlot(GameAssets.MatureCandle02, 1);
+      // newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
+
+    }
+
+
     parentBlock.isEmpty = true;
 
     Destroy(gameObject);

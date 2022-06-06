@@ -21,10 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candles/Lighted candle 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candles/Lighted candle 02.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightedCandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ItemTooltip.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
@@ -116,9 +118,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory - UI Scripts/InventorySlotUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shop - Ui/BuyCartUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" />
       </list>
     </option>
   </component>
@@ -182,7 +185,7 @@
       <workItem from="1643898109927" duration="9358000" />
       <workItem from="1645565453824" duration="1171000" />
       <workItem from="1653997480558" duration="8594000" />
-      <workItem from="1654526355204" duration="2374000" />
+      <workItem from="1654526355204" duration="4243000" />
     </task>
     <servers />
   </component>
@@ -275,24 +278,5 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="137" y="0" width="1005" height="800" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1654527508572" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs</url>
-          <line>82</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" initialLine="82">
-            <startOffsets>
-              <option value="1800" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1866" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

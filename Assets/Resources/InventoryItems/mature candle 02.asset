@@ -18,5 +18,5 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: b9e3ba4759be64f0eb315abbf45923c7, type: 3}
   description: 'Better candle. '
   stackable: 1
-  buyInPrice: 20
-  sellOutPrice: 15
+  buyInPrice: 22
+  sellOutPrice: 18

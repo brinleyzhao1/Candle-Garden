@@ -25,9 +25,20 @@ public class FeedbackText : MonoBehaviour
       StartCoroutine(TooFarText());
     }
 
-    public IEnumerator TooFarText()
+    private IEnumerator TooFarText()
     {
       textContent.text = "too far";
+      yield return new WaitForSeconds(timeTextOnScreen);
+      textContent.text = "";
+    }
+    public void ShowTakeDamageText()
+    {
+      StartCoroutine( TakeDamageText());
+    }
+
+    private IEnumerator TakeDamageText()
+    {
+      textContent.text = "not in light! health -5";
       yield return new WaitForSeconds(timeTextOnScreen);
       textContent.text = "";
     }

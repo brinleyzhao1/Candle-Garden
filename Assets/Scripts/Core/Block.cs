@@ -62,7 +62,7 @@ public class Block : MonoBehaviour
         }
         else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Placing)
         {
-          TryPlaceMatureCandle();
+          TryPlaceMatureCandle01();
         }
         else //not empty
         {
@@ -103,9 +103,10 @@ public class Block : MonoBehaviour
 
   }
 
-  private void TryPlaceMatureCandle()
+  private void TryPlaceMatureCandle01()
+  //todo can also place different kind of candles
   {
-    if (TryRemoveOneFromInventory(GameAssets.matureCandle)) return;
+    if (TryRemoveOneFromInventory(GameAssets.MatureCandle01)) return;
 
     GameAssets.SFX.PlayOneShot(GameAssets.PlacingSFX);
     //

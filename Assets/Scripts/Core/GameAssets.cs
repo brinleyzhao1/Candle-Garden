@@ -65,6 +65,15 @@ namespace Core
     [SerializeField] private GameObject setLightedCandle02;
     public static GameObject LightedCandle02;
 
+
+    [SerializeField] private InventoryItem setmatureCandle01;
+
+    public static InventoryItem MatureCandle01;
+
+    [SerializeField] private InventoryItem setmatureCandle02;
+
+    public static InventoryItem MatureCandle02;
+
     // [SerializeField] private TextMeshProUGUI setCandleStockNum;
     // public static TextMeshProUGUI CandleStockNumTxt;
     // [SerializeField] private TextMeshProUGUI setSeedStockNumTxt;
@@ -90,9 +99,6 @@ namespace Core
 
     public static Inventories.Inventory inventory;
 
-    [SerializeField] private InventoryItem setmatureCandle;
-
-    public static InventoryItem matureCandle;
 
     #endregion
 
@@ -171,7 +177,9 @@ namespace Core
       // toolsTab = setToolsTab;
       inventory = setInventory;
 
-      matureCandle = setmatureCandle;
+      MatureCandle01 = setmatureCandle01;
+      MatureCandle02 = setmatureCandle02;
+
       EndGamePanel = setEndGamePanel;
 
       buyCart = setBuyCart;

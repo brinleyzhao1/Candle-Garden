@@ -83,6 +83,7 @@ public class Health : MonoBehaviour
     while (damageCoroutineRunning == true)
     {
       currentHealth -= damagePerSec;
+      GameAssets.Feedback.ShowTakeDamageText();
 
       GameAssets.SFX.PlayOneShot(GameAssets.LoseHealthSFX);
       UpdateUi();
