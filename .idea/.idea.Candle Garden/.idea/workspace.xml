@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616be37f-95a1-40f7-b41e-b7637646d39b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Candle Garden/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candles/Lighted candle 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candles/Lighted candle 02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameAssets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TutorialPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ActionStore.cs" />
         <option value="$PROJECT_DIR$/Assets/FeedbackText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerAction.cs" />
@@ -122,6 +114,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnlitCandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Experience.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FeedbackText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" />
       </list>
     </option>
   </component>
@@ -185,7 +178,7 @@
       <workItem from="1643898109927" duration="9358000" />
       <workItem from="1645565453824" duration="1171000" />
       <workItem from="1653997480558" duration="8594000" />
-      <workItem from="1654526355204" duration="4243000" />
+      <workItem from="1654526355204" duration="4813000" />
     </task>
     <servers />
   </component>
