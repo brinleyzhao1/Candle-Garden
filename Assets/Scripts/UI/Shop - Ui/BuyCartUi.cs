@@ -73,7 +73,7 @@ namespace UI
       UpdateTransactionMoney();
       amountText.text = currentTransactionAmount.ToString();
 
-      if (UpdateBuyCart()) return;
+      // if (UpdateBuyCart()) return;
       //check if player has enough money
       // if (GameAssets.money.GetMoneyHave() >= thisItem.GetBuyInPrice())
       // {
@@ -123,11 +123,16 @@ namespace UI
     private bool UpdateSellCart()
     {
       int stockLeft = inventory.GetNumberInSlot(sellSlotIndex);
-      if (stockLeft < currentTransactionAmount)
+      if (stockLeft < currentTransactionAmount )
       {
         priceText.color = Color.red;
         // iconImage.gameObject.SetActive(false);
         return true;
+      }
+      else
+      {
+        priceText.color = Color.white;
+
       }
 
       return false;

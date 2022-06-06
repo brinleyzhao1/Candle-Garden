@@ -78,6 +78,7 @@
           <e p="Core" t="Include">
             <e p="Block.cs" t="Include" />
             <e p="CategoryEnum.cs" t="Include" />
+            <e p="Experience.cs" t="Include" />
             <e p="GameAssets.cs" t="Include" />
             <e p="health.cs" t="Include" />
             <e p="Money.cs" t="Include" />
