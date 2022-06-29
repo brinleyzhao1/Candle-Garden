@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core;
 using TMPro;
 using UnityEngine;
 
@@ -31,6 +32,7 @@ public class FeedbackText : MonoBehaviour
       yield return new WaitForSeconds(timeTextOnScreen);
       textContent.text = "";
     }
+
     public void ShowTakeDamageText()
     {
       StartCoroutine( TakeDamageText());
@@ -39,6 +41,19 @@ public class FeedbackText : MonoBehaviour
     private IEnumerator TakeDamageText()
     {
       textContent.text = "not in light! health -5";
+      yield return new WaitForSeconds(timeTextOnScreen);
+      textContent.text = "";
+    }
+    public void ShowCannotHarvest()
+    {
+      StartCoroutine( CannotHarvestText());
+    }
+
+    private IEnumerator CannotHarvestText()
+    {
+      GameAssets.SFX.PlayOneShot(GameAssets.ErrorSFX);
+
+      textContent.text = "cannot harvest if candle isn't fully grown";
       yield return new WaitForSeconds(timeTextOnScreen);
       textContent.text = "";
     }

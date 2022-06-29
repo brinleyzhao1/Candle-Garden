@@ -36,15 +36,14 @@ namespace Core
     public static AudioClip MoneySFX;
     [SerializeField] private AudioClip setActionSlotSFX;
     public static AudioClip ActionSlotSFX;
+    // [SerializeField] private AudioClip setErrorSFX;
+    // public static AudioClip errorSFX;
 
     #endregion
 
     #region Candles
 
-    [Header("Candles")]
-
-
-    [SerializeField] private InventoryItem setSeedObject01;
+    [Header("Candles")] [SerializeField] private InventoryItem setSeedObject01;
     public static InventoryItem SeedObject01;
     [SerializeField] private InventoryItem setSeedObject02;
     public static InventoryItem SeedObject02;
@@ -99,7 +98,6 @@ namespace Core
 
     public static Inventories.Inventory inventory;
 
-
     #endregion
 
     #region Shop Panel
@@ -125,10 +123,10 @@ namespace Core
 
     [Header("Miscellaneous")] [SerializeField]
     private GameObject setMatureEffect;
+
     public static GameObject MatureEffect;
 
-    [SerializeField]
-    private GameObject setPointToClickEffect;
+    [SerializeField] private GameObject setPointToClickEffect;
     public static GameObject PointToClickEffect;
 
     [SerializeField] private InventoryItem setLighterObject;
@@ -158,6 +156,7 @@ namespace Core
       GrownCandle01 = setGrownCandle01;
       GrownCandle02 = setGrownCandle02;
       SFX = setSFX;
+      // errorSFX = setErrorSFX;
 
       shopEntry = setShopEntryPrefab;
 

@@ -21,8 +21,14 @@ public class UnlitCandle : MonoBehaviour
 
   private void OnMouseOver()
   {
-    if (Input.GetMouseButtonDown(1) && state == CandleState.Ready)
+    if (Input.GetMouseButtonDown(1))
     {
+      if (state != CandleState.Ready)
+      {
+        GameAssets.Feedback.ShowCannotHarvest();
+        return;
+      }
+
       float distanceFromPlayer = Vector3.Distance(GameAssets.Player.transform.position, transform.position);
       if (distanceFromPlayer > 4)
       {
@@ -32,15 +38,12 @@ public class UnlitCandle : MonoBehaviour
 
       if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Lighter)
       {
-
         LightCandle();
       }
       else if (GameAssets.Player.currentActionMode == PlayerAction.ActionMode.Harvest)
       {
-
         HarvestCandle();
       }
-
     }
   }
 
@@ -48,17 +51,11 @@ public class UnlitCandle : MonoBehaviour
   void Start()
   {
     // _second += Time.deltaTime * timeScale / 2;
-    if (state==CandleState.GrowingUp)
+    if (state == CandleState.GrowingUp)
     {
       StartCoroutine(GrowUp());
     }
-
-
-
   }
-
-
-
 
 
   //private -----
@@ -70,12 +67,10 @@ public class UnlitCandle : MonoBehaviour
     if (versionNum == 1)
     {
       newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
-
     }
     else if (versionNum == 2)
     {
       newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
-
     }
 
 
@@ -94,14 +89,12 @@ public class UnlitCandle : MonoBehaviour
       // GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 01");
       GameAssets.inventory.AddToFirstEmptySlot(GameAssets.MatureCandle01, 1);
       // newCandle = Instantiate(GameAssets.LightedCandle01, transform.position, Quaternion.identity);
-
     }
     else if (versionNum == 2)
     {
       // GameAssets.ExperienceSystem.CountExperienceOnAction("harvest candle 02");
       GameAssets.inventory.AddToFirstEmptySlot(GameAssets.MatureCandle02, 1);
       // newCandle = Instantiate(GameAssets.LightedCandle02, transform.position, Quaternion.identity);
-
     }
 
 
@@ -123,7 +116,7 @@ public class UnlitCandle : MonoBehaviour
       {
         fullGrownHeight = 15;
       }
-      else if (versionNum== 2)
+      else if (versionNum == 2)
       {
         fullGrownHeight = 6;
       }

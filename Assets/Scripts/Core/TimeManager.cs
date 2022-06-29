@@ -7,14 +7,15 @@ namespace Core
 {
   public class TimeManager : MonoBehaviour
   {
-    [Header("time scale tweaking")]
-    [SerializeField] private int timeScale = 800; //the bigger the faster in-game time is
+    [Header("time scale tweaking")] [SerializeField]
+    private int timeScale = 800; //the bigger the faster in-game time is
 
     // [SerializeField] private Range fastForwardTimeMultiplier = new Range(1, 2); //
     [SerializeField] [Range(1, 5)] private float fastForwardTimeMultiplier = 1.1f; //
 
-    [Header("Asset Handles")]
-    [SerializeField] private Sprite pauseIcon;
+    [Header("Asset Handles")] [SerializeField]
+    private Sprite pauseIcon;
+
     [SerializeField] private Sprite playIcon;
     [SerializeField] private Image pauseButtonImage;
 
@@ -41,7 +42,24 @@ namespace Core
     private void UpdateText()
     {
       dayText.text = Day.ToString();
-      clockText.text = Hour + ":" + Minute;
+      //  clockText.text = Hour + ":" + Minute; // display with minute
+
+      if (Hour == 0)
+      {
+        clockText.text = "12 am";
+      }
+      else if (Hour < 12)
+      {
+        clockText.text = Hour + " am";
+      }
+      else if (Hour == 12)
+      {
+        clockText.text = "12 pm";
+      }
+      else
+      {
+        clockText.text = (Hour - 12) + " pm";
+      }
       // yearText.text = Year.ToString();
     }
 
@@ -75,6 +93,7 @@ namespace Core
       }
     }
 
+    //currently not used
     public void PauseTimeButton()
     {
       if (Time.timeScale > 0)
@@ -90,6 +109,7 @@ namespace Core
     }
 
 
+    //currently not used
     public void FastForwardTimeButton()
     {
       if (Time.timeScale <= 1)
