@@ -2707,7 +2707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &216178170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3988,8 +3988,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -39}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 48.1613, y: -43.4777}
+  m_SizeDelta: {x: 304.3224, y: 58.9555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309560227
 MonoBehaviour:
@@ -4011,7 +4011,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: left click to move, right click to interact
+  m_text: "left click or WASD to move, \nright click to interact"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0ab3be0168394466948c726df488350, type: 2}
   m_sharedMaterial: {fileID: -5262382782427918611, guid: b0ab3be0168394466948c726df488350,
@@ -4075,7 +4075,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -66.37135, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.4729614, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -32723,6 +32723,7 @@ GameObject:
   - component: {fileID: 2068377841}
   - component: {fileID: 2068377842}
   - component: {fileID: 2068377843}
+  - component: {fileID: 2068377839}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -32785,6 +32786,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!143 &2068377839
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068377836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2068377840
 Transform:
   m_ObjectHideFlags: 0
@@ -32792,8 +32811,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068377836}
-  m_LocalRotation: {x: -0, y: -0.9952028, z: -0, w: 0.09783374}
-  m_LocalPosition: {x: -249.04333, y: -673.16364, z: 4.4912233}
+  m_LocalRotation: {x: 0.033836856, y: -0.99382687, z: 0.0035952057, w: -0.105595276}
+  m_LocalPosition: {x: -249.03871, y: -673.16364, z: 4.48126}
   m_LocalScale: {x: 1, y: 2.1256793, z: 1}
   m_Children:
   - {fileID: 1387969643}
@@ -32803,7 +32822,7 @@ Transform:
   - {fileID: 1021362853}
   m_Father: {fileID: 1488969338}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -168.771, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -192.13, z: -3.9}
 --- !u!114 &2068377841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32817,6 +32836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flyingSFX: {fileID: 488490683}
+  speed: 4
+  turnSmoothTime: 0.1
 --- !u!195 &2068377842
 NavMeshAgent:
   m_ObjectHideFlags: 0
