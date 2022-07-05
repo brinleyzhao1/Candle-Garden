@@ -36,6 +36,8 @@ namespace Core
     public static AudioClip MoneySFX;
     [SerializeField] private AudioClip setActionSlotSFX;
     public static AudioClip ActionSlotSFX;
+    [SerializeField] private AudioClip setUiPaperSFX;
+    public static AudioClip UiPaperSFX;
     // [SerializeField] private AudioClip setErrorSFX;
     // public static AudioClip errorSFX;
 
@@ -170,6 +172,7 @@ namespace Core
       MoneySFX = setMoneySFX;
       ActionSlotSFX = setActionSlotSFX;
       HarvestSFX = setHarvestSFX;
+      UiPaperSFX = setUiPaperSFX;
 
       // seedsTab = setSeedsTab;
       // produceTab = setProduceTab;

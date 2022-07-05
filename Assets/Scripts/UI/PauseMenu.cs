@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 
@@ -7,11 +6,7 @@ namespace UI
   public class PauseMenu : MonoBehaviour
   {
     [SerializeField] private GameObject tutorialPanel;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
     private void OnEnable()
     {
@@ -28,7 +23,6 @@ namespace UI
     {
       tutorialPanel.SetActive(true);
       gameObject.SetActive(false);
-
     }
 
     public void BtnQuit()

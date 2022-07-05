@@ -40,6 +40,11 @@ namespace Core
       }
 
       //WASD for movement as well
+      KeyboardMovementOption();
+    }
+
+    private void KeyboardMovementOption()
+    {
       float horizontal = speed * Input.GetAxisRaw("Horizontal");
       float vertical = speed * Input.GetAxisRaw("Vertical");
 
