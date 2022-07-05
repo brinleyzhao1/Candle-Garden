@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Core;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class UnlitCandle : MonoBehaviour
@@ -18,6 +20,7 @@ public class UnlitCandle : MonoBehaviour
     GrowingUp,
     Ready
   }
+
 
   private void OnMouseOver()
   {
@@ -128,14 +131,9 @@ public class UnlitCandle : MonoBehaviour
       timePassed += 0.2f;
     }
 
-    state = CandleState.Ready;
-    ReadyToHarvest();
+    //fully grown
+    parentBlock.InstantiateGrownCandle(this.gameObject);
+
   }
 
-  private void ReadyToHarvest()
-  {
-    var matureEffect = Instantiate(GameAssets.MatureEffect, transform.position, Quaternion.identity);
-    matureEffect.transform.parent = transform;
-    matureEffect.transform.position = matureEffect.transform.position;
-  }
 }

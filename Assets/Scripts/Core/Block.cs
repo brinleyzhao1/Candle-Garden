@@ -21,6 +21,12 @@ public class Block : MonoBehaviour
 
   // [SerializeField] private Orientation _orientation;
 
+  public void InstantiateGrownCandle(GameObject originalBabyCandle)
+  {
+    GameObject newCandle = Instantiate(GameAssets.GrownCandle01, originalBabyCandle.transform.position, Quaternion.identity);
+    newCandle.GetComponent<UnlitCandle>().parentBlock = this;
+    Destroy(originalBabyCandle);
+  }
 
   private void Start()
   {
