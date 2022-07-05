@@ -50,6 +50,7 @@ public class Block : MonoBehaviour
       if (TooFar())
       {
         GameAssets.Feedback.ShowTooFarText();
+        GameAssets.SFX.PlayOneShot(GameAssets.ErrorSFX);
 
         return; //too far
       }
@@ -66,6 +67,7 @@ public class Block : MonoBehaviour
         }
         else //not empty
         {
+          GameAssets.Feedback.ShoNoActionSelectedText();
           GameAssets.SFX.PlayOneShot(GameAssets.ErrorSFX);
         }
       }
